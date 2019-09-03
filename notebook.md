@@ -4,7 +4,7 @@
 [x] applied account on chameleon\
 [x] filled out the class survey\
 [x] installed python on computer\
-[x] posted bio on piazza\
+[x] posted bio on piazza
 
 #week 2\
 [x] received hid on github\
