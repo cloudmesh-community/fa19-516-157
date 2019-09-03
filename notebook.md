@@ -11,5 +11,5 @@
 [x] readme.yml is correct\
 [] created virtual python3 env\
 [] created venv-windows.md\
-[] completed datacenter exercises
+[] completed datacenter exercises\
 [] learn markdown
