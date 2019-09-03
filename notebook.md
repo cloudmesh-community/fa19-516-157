@@ -9,7 +9,7 @@
 #week 2\
 [x] received hid on github\
 [x] readme.yml is correct\
-[] created virtual python3 env\
+[x] created virtual python3 env\
 [] created venv-windows.md\
 [] completed datacenter exercises\
 [] learn markdown
