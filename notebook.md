@@ -12,3 +12,4 @@
 [] created virtual python3 env\
 [] created venv-windows.md\
 [] completed datacenter exercises
+[] learn markdown
