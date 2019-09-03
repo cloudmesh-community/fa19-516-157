@@ -1,5 +1,5 @@
-#week 1
-[x] created notebook.md
+#week 1\
+[x] created notebook.md\
 [x] applied account on futuresystem
 [x] applied account on chameleon
 [x] filled out the class survey
