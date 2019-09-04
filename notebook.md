@@ -12,6 +12,6 @@
 * [x] received hid on github
 * [x] readme.yml is correct
 * [x] created virtual python3 env
-* [ ] created venv-windows.md
+* [x] created venv-windows.md
 * [ ] completed datacenter exercises
 * [ ] :o2: learn markdown
