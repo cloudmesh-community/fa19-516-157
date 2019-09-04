@@ -5,7 +5,7 @@ In case if the package virtualenv doesn't exist by default\
 `pip install virtualenv`
 
 Navigate to desired directory then type\
-`virtualenv ENV3`
+`virtualenv ENV3`\
 ENV3 stands for the environment name, user can change it to any other name
 
 To activate virtual environment, enter\
