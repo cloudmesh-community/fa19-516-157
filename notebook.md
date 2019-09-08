@@ -1,4 +1,6 @@
-# week 1
+# fa19-516-157
+
+## week 1
 
 * [x] created notebook.md
 * [x] applied account on futuresystem
@@ -7,7 +9,7 @@
 * [x] installed python on computer
 * [x] posted bio on piazza
 
-# week 2
+## week 2
 
 * [x] received hid on github
 * [x] readme.yml is correct
