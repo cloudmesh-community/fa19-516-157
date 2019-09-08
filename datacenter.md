@@ -18,10 +18,24 @@ My carbon footprint is 28190 lbs, added to [link](https://docs.google.com/spread
 
 ## E.Datacenter.4
 **_Wind_**
+
 Wind energy is harvested from wind turbines, the gigantic turbines are oftern planted in areas such as plains that have winds throughout the year. The wind will push the propellars which then turns the electric generator to generate electricity. It is a form of converting mechanical power to electricity. 
+
 According to Savvas' article [Wind Turbines Set To Deliver The Edge Data Centre Needs Of The Future?](https://data-economy.com/wind-turbines-set-to-deliver-the-edge-data-centre-needs-of-the-future/) Green IT- Das Systemhaus has a data center called WindCORES in Paderborn, Germany and 92% of the data center's energy comes from wind turbines yet the facility is still able to offer service with reliability level of 99.98%.
 ##### Reference
 * <https://www.awea.org/wind-101/basics-of-wind-energy>
 * <https://data-economy.com/wind-turbines-set-to-deliver-the-edge-data-centre-needs-of-the-future/>
 
 ## E.Datacenter.5
+According to this [Article](https://www.scmp.com/news/china/politics/article/2165831/china-steps-green-energy-push-revised-renewable-target-35-2030) from South China Morning Post. China has aimed for renewable energy to account for at least 35 percent of electricity consumption by 2030. The government also required non-compliant firms to pay fines to energy providers, the fines are used to pay for the government subsidy to those energy providers. The government also required some provinces to increase their target of non-hydro power consumption.
+
+##### Reference 
+* <https://www.scmp.com/news/china/politics/article/2165831/china-steps-green-energy-push-revised-renewable-target-35-2030>
+
+## E.Datacenter.6
+The rear door heat exchangers are great alternatives to using chillers in data centers. According to [Data Center RackCooling with Rear-doorHeat Exchanger](https://datacenters.lbl.gov/sites/all/files/rdhx-doe-femp.pdf) from U.S. Department of Energy, the circulating water within the device will absorb the heat from server fans before it is discharged into the data center. According to the same article, the device will increase reliability and reduce cost since it is a passive device meaning it has no moving parts. 
+
+##### Reference
+* <https://datacenters.lbl.gov/sites/all/files/rdhx-doe-femp.pdf>
+
+## E.Datacenter.8
