@@ -6,3 +6,9 @@ There are two sources online [WorldTopDataCenters](http://worldstopdatacenters.c
 
 According to [Power usage effectiveness in data centers: Overloaded and
 underachieving](https://cedmcenter.org/wp-content/uploads/2017/10/Power-usage-effectiveness-in-data-centers-overloaded-and-underachieving.pdf) from The Electricity Journal. Apple's Maiden datacenter has PUE of 1.1 which is quite efficient. The local electricity cost in Maiden, North Carolina is $0.08/kWh. Calculation shows that Apple's Maiden data center has yearly cost of 81.8M dollars and 542,510 tons of yearly CO2 footprint which is equal to 119,600 cars.
+
+##### Reference
+* <http://worldstopdatacenters.com/apple-maiden-north-carolina/>
+* <https://baxtel.com/data-center/apple-maiden-north-carolina>
+* <https://cedmcenter.org/wp-content/uploads/2017/10/Power-usage-effectiveness-in-data-centers-overloaded-and-underachieving.pdf>
+* <https://www.schneider-electric.com/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-carbon-footprint-comparison-calculator/>
