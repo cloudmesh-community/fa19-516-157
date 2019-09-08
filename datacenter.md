@@ -39,3 +39,6 @@ The rear door heat exchangers are great alternatives to using chillers in data c
 * <https://datacenters.lbl.gov/sites/all/files/rdhx-doe-femp.pdf>
 
 ## E.Datacenter.8
+In May 27 2017, British Airways suffered an outage at a data center near Heathrow airpot in London. According to Patrizio from [NetworkWorld](https://www.networkworld.com/article/3200105/british-airways-outage-like-most-data-center-outages-was-caused-by-humans.html), more than 400 flights canceld and 75,000 passengers stranded in one day because of a simple human error. An engineer in the data center disconnected a power supply in the data center, when the power was reconnected, it caused a major power surge in the data center.
+##### Reference
+* <https://www.networkworld.com/article/3200105/british-airways-outage-like-most-data-center-outages-was-caused-by-humans.html>
