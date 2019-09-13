@@ -1,11 +1,8 @@
 First upgrade pip to latest version\
 `python -m pip install --upgrade pip`
 
-In case if the package virtualenv doesn't exist by default\
-`pip install virtualenv`
-
 Navigate to desired directory then type\
-`virtualenv ENV3`\
+`python -m venv ENV3`\
 ENV3 stands for the environment name, user can change it to any other name
 
 To activate virtual environment, enter\
