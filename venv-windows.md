@@ -1,6 +1,8 @@
 First upgrade pip to latest version\
 `python -m pip install --upgrade pip`
 
+
+In my case I only have python 3.7.4 installed so the following command by default installs python3 venv\
 Navigate to desired directory then type\
 `python -m venv ENV3`\
 ENV3 stands for the environment name, user can change it to any other name
