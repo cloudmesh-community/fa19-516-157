@@ -1,7 +1,7 @@
 # Cloudmesh Compute-Azure
 
 :o2: Chenxu  Wang fa19-516-157 
-
+Chenxu Wang, fa19-516-157
 :o2: link to github dir missing
 
 ## Goal
@@ -15,6 +15,7 @@ Extend the current cloudmesh-compute-azure to include security group functions.
 * Implemented a script using azure python libraries to start compute service without cloudmesh :o2: link missing
 * Found the methods needed to create security group in azure package
 * Successfullly created security group when creating vm :o2: link to sample prg missing
+* [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 
 ## TODO
 
