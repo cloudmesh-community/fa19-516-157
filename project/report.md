@@ -1,22 +1,28 @@
 # Cloudmesh Compute-Azure
 
+:o2: name and hid missing
+
 ## Goal
 
 Extend the current cloudmesh-compute-azure to include security group functions. 
 
 ## Progress
+
 ### Week 8 October 14
-* Implemented a script using azure python libraries to start compute service without cloudmesh
+
+* Implemented a script using azure python libraries to start compute service without cloudmesh :o2: link missing
 * Found the methods needed to create security group in azure package
-* Successfullly created security group when creating vm 
+* Successfullly created security group when creating vm :o2: link to sample prg missing
 
 ## TODO
+
 * Attach security group when starting compute service(create vm)
 * Integrate the script with cloudmesh-compute-azure
 * Test the functionality of cloudmesh-compute-azure
 * Benchmark the finished cloudmesh-compute-azure
 
 ## Reference
+
 * [Create VM on Azure using Python](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/python#)
 * [Issue/Example related to NSG creation on github-azure](https://github.com/MicrosoftDocs/azure-docs/issues/30555)
 * [Discussion regarding NSG security rules](https://stackoverflow.com/questions/55970074/issues-with-network-security-group-deployment-using-python-networksecuritygrou)
