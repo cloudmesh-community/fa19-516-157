@@ -17,7 +17,7 @@ Extend the current cloudmesh-compute-azure to include security group functions.
 * Benchmark the finished cloudmesh-compute-azure
 
 ##Reference
-* [Create vm on azure using python](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/python#)
+* [Create VM on Azure using Python](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/python#)
 * [Issue/Example related to NSG creation on github-azure](https://github.com/MicrosoftDocs/azure-docs/issues/30555)
 * [Discussion regarding NSG security rules](https://stackoverflow.com/questions/55970074/issues-with-network-security-group-deployment-using-python-networksecuritygrou)
 * [Azure documentation-Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)

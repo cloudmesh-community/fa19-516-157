@@ -283,7 +283,8 @@ if __name__ == "__main__":
     """[SecurityRule('Tcp', '*', '*', 'Allow', 'Inbound', description='Allow RDP port 3389',
                                               source_port_range='*', destination_port_range='3389', priority=100,
                                               name='RDP01')]"""
-    network_client.network_security_groups.create_or_update(GROUP_NAME, "test-nsg", parameters)
+    network_client.network_security_groups.create_or_update(
+        GROUP_NAME, "test-nsg", parameters)
     # actual crate virtual machine, above method calls prepare resource
     creation_result = create_vm(network_client, compute_client)
     print("------------------------------------------------------")
