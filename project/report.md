@@ -4,7 +4,7 @@
 
 Extend the current cloudmesh-compute-azure to include security group functions. 
 
-##Progress
+## Progress
 ### Week 8 October 14
 * Implemented a script using azure python libraries to start compute service without cloudmesh
 * Found the methods needed to create security group in azure package
