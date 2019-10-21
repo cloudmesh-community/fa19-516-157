@@ -1,7 +1,7 @@
 # Cloudmesh Compute-Azure
 
-:o2: Chenxu  Wang fa19-516-157 
 Chenxu Wang, fa19-516-157
+
 :o2: link to github dir missing
 
 ## Goal
