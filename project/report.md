@@ -2,7 +2,7 @@
 
 Chenxu Wang, fa19-516-157
 
-:o2: link to github dir missing
+[fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 
 ## Goal
 
@@ -12,9 +12,9 @@ Chenxu Wang, fa19-516-157
 
 ### Week 8 October 14
 
-* Implemented a script using azure python libraries to start compute service without cloudmesh :o2: link missing
+* Implemented a script using azure python libraries to start compute service without cloudmesh
 * Found the methods needed to create security group in azure package
-* Successfullly created security group when creating vm :o2: link to sample prg missing
+* Successfullly created security group when creating vm 
 * [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 
 ### Week 9 October 21
