@@ -6,7 +6,7 @@ Chenxu Wang, fa19-516-157
 
 ## Goal
 
-Extend the current cloudmesh-compute-azure to include security group functions. 
+* Extend the current cloudmesh-compute-azure to include security group functions. 
 
 ## Progress
 
@@ -17,9 +17,12 @@ Extend the current cloudmesh-compute-azure to include security group functions.
 * Successfullly created security group when creating vm :o2: link to sample prg missing
 * [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 
+### Week 9 October 21
+* Attached Network Security Group when creating VM
+* [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 ## TODO
 
-* Attach security group when starting compute service(create vm)
+- [x]  Attach security group when starting compute service(create vm)
 * Integrate the script with cloudmesh-compute-azure
 * Test the functionality of cloudmesh-compute-azure
 * Benchmark the finished cloudmesh-compute-azure

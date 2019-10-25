@@ -77,7 +77,10 @@ def create_vnet(network_client):
 
 def create_subnet(network_client):
     subnet_params = {
-        'address_prefix': '10.0.0.0/24'
+        'address_prefix': '10.0.0.0/24',
+        'network_security_group': {
+            'id': '/subscriptions/1b552345-85f2-4a12-97af-c67f27be817b/resourceGroups/mySecondResourceGroup/providers/Microsoft.Network/networkSecurityGroups/test-nsg'
+        }
     }
     creation_result = network_client.subnets.create_or_update(
         GROUP_NAME,
@@ -108,7 +111,10 @@ def create_nic(network_client):
             'subnet': {
                 'id': subnet_info.id
             }
-        }]
+        }],
+        'network_security_group': {
+            'id': '/subscriptions/1b552345-85f2-4a12-97af-c67f27be817b/resourceGroups/mySecondResourceGroup/providers/Microsoft.Network/networkSecurityGroups/test-nsg'
+        }
     }
     creation_result = network_client.network_interfaces.create_or_update(
         GROUP_NAME,
@@ -117,53 +123,6 @@ def create_nic(network_client):
     )
 
     return creation_result.result()
-
-
-"""
-#Network Srcurity Group section
-def create_network_security_group(network_client):
-    params_create = azure.mgmt.network.models.NetworkSecurityGroup(
-        location=LOCATION,
-        security_rules=[
-            azure.mgmt.network.models.SecurityRule(
-                name='rdprule',
-                access=azure.mgmt.network.models.SecurityRuleAccess.allow,
-                description='test security rule',
-                destination_address_prefix='*',
-                destination_port_range='3389',
-                direction=azure.mgmt.network.models.SecurityRuleDirection.inbound,
-                priority=500,
-                protocol=azure.mgmt.network.models.SecurityRuleProtocol.tcp,
-                source_address_prefix='*',
-                source_port_range='*',
-            ),
-        ],
-    )
-
-    result_create_NSG = network_client.network_security_groups.create_or_update(
-        GROUP_NAME,
-        'nsg-vm',
-        params_create,
-    )
-
-    return result_create_NSG.result()
-
-
-def attach_network_security_group(network_client, creation_result_nsg):
-    params_create = azure.mgmt.network.models.Subnet(
-        network_security_group=creation_result_nsg,
-        address_prefix=SUBNETRANGE,
-    )
-
-    result_create = network_client.subnets.create_or_update(
-        GROUP_NAME,
-        VNET,
-        SUBNET,
-        params_create,
-    )
-
-    return result_create.result()
-"""
 
 
 # create virtual machine
@@ -247,27 +206,7 @@ if __name__ == "__main__":
     print("------------------------------------------------------")
     print(creation_result)
     input('Press enter to continue...')
-    # create subnet
-    creation_result = create_subnet(network_client)
-    print("------------------------------------------------------")
-    print(creation_result)
-    input('Press enter to continue...')
-    # create network interface
-    creation_result = create_nic(network_client)
-    print("------------------------------------------------------")
-    print(creation_result)
-    input('Press enter to continue...')
-    """
-    # Security group section
-    creation_result_nsg = create_network_security_group(network_client)
-    print("------------------------------------------------------")
-    print(creation_result_nsg)
-    input('Press enter to continue...')
-    # Add Security Group
-    creation_result = attach_network_security_group(network_client, creation_result_nsg)
-    print("------------------------------------------------------")
-    print(creation_result)
-    input('Press enter to continue...')"""
+    # Create NSG
     parameters = NetworkSecurityGroup()
     parameters.location = LOCATION
     parameters.security_rules = [SecurityRule(name='rdprule',
@@ -280,13 +219,26 @@ if __name__ == "__main__":
                                               protocol='Tcp',
                                               source_address_prefix='*',
                                               source_port_range='*', )]
-    """[SecurityRule('Tcp', '*', '*', 'Allow', 'Inbound', description='Allow RDP port 3389',
-                                              source_port_range='*', destination_port_range='3389', priority=100,
-                                              name='RDP01')]"""
     network_client.network_security_groups.create_or_update(
         GROUP_NAME, "test-nsg", parameters)
+    # create subnet
+    creation_result = create_subnet(network_client)
+    print("------------------------------------------------------")
+    print(creation_result)
+    input('Press enter to continue...')
+    # create network interface
+    creation_result = create_nic(network_client)
+    print("------------------------------------------------------")
+    print(creation_result)
+    input('Press enter to continue...')
+
     # actual crate virtual machine, above method calls prepare resource
     creation_result = create_vm(network_client, compute_client)
     print("------------------------------------------------------")
     print(creation_result)
-    input('Press enter to continue...')
+    input('VM creation Success!')
+
+
+# Misc
+# Maybe related secgroup class method-retrieve the id of secgroup
+# <azure.mgmt.network.v2018_12_01.models.network_security_group_py3.NetworkSecurityGroup
