@@ -4,6 +4,9 @@ Chenxu Wang, fa19-516-157
 
 [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 
+## Link to Cloudmesh-Azure
+* https://github.com/cloudmesh/cloudmesh-cloud/tree/master/cloudmesh/compute/azure
+
 ## Goal
 
 * Extend the current cloudmesh-compute-azure to include security group functions. 
