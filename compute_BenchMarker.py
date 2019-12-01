@@ -23,7 +23,7 @@ Errors: can't give specific name to cms vm boot command
 
 
 class TestCompute:
-    cloud_providers = ["chameleon", "aws"]
+    cloud_providers = ["chameleon", "aws", "azure"]
     res_list = []
 
     def test_cms_flavor_list(self):
@@ -58,27 +58,27 @@ class TestCompute:
 
     def test_cms_vm_boot_one(self):
         HEADING()
-        command = "cms vm boot"
+        command = "cms vm boot "
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-1")
 
     def test_cms_vm_boot_five(self):
         # Excluding chameleon from multiple vm boot
         HEADING()
-        self.cloud_providers = ["aws"]
+        self.cloud_providers = ["aws", "azure"]
         command = "cms vm boot --n=5"
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-5")
-        self.cloud_providers = ["chameleon", "aws"]
+        self.cloud_providers = ["chameleon", "aws", "azure"]
 
     def test_cms_vm_boot_ten(self):
         # Excluding chameleon from multiple vm boot
         HEADING()
-        self.cloud_providers = ["aws"]
+        self.cloud_providers = ["aws", "azure"]
         command = "cms vm boot --n=10"
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-10")
-        self.cloud_providers = ["chameleon", "aws"]
+        self.cloud_providers = ["chameleon", "aws", "azure"]
 
     def test_cms_vm_terminate(self, name, count):
         # Giving one name will delete all instance with the same name
@@ -99,6 +99,7 @@ class TestCompute:
                     print("This will take some time")
             start = time()
             result = Shell.execute(command, shell=True)
+            print(result)
             end = time()
             res = end - start
             time_record.update({cloud_provider: res})
@@ -116,7 +117,7 @@ class TestCompute:
     def csv_writer(self):
         header = self.cloud_providers
         header.insert(0, " ")
-        with open('benchmark_result.csv', 'wt', newline='')as file:
+        with open('benchmark_time_result.csv', 'wt', newline='')as file:
             writer = csv.writer(file, delimiter=',')
             writer.writerow(header)
             for res in self.res_list:
@@ -126,7 +127,7 @@ class TestCompute:
 def main():
     # remember to change the default vm name accordingly, in order for vm terminate to work properly
     vm_name = "wang542-vm"
-    key = "id_rsa"
+    key = "wang542"
     Shell.execute("cms start", shell=True)
     Shell.execute("cms set key="+key, shell=True)
     bench_marker = TestCompute()

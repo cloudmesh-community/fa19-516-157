@@ -17,9 +17,9 @@ SUBNETRANGE = '10.0.0.0/24'
 
 def get_credentials():
     credentials = ServicePrincipalCredentials(
-        client_id='e1409c33-f364-4cd9-9981-fbd270058389',
-        secret=':ydi7/pc9]XZekc/lkBaBDs55hAPOD:O',
-        tenant='1113be34-aed1-4d00-ab4b-cdd02510be91'
+        client_id='xxxxxxxxxxxxxxxxx',
+        secret='xxxxxxxxxxxxxxxxxxxxxxxxxx',
+        tenant='xxxxxxxxxxxxxxxxx'
     )
 
     return credentials
