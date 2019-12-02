@@ -101,6 +101,7 @@ stated that ssh works for them
 * Wrote a script that will run compute commands through different clouds
 * [Link to benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
 * Documented instructions on how to generate important credentials for azure API
+* [Link to credential instruction](https://github.com/cloudmesh-community/fa19-516-157/blob/master/azure_credentials.md)
 
 
 ## Reference
