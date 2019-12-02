@@ -1,34 +1,107 @@
-# Cloudmesh Compute-Azure
+# Benchmark Compute Providers
 
 Chenxu Wang, fa19-516-157
 
 [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 
-## Link to Cloudmesh-Azure
-* https://github.com/cloudmesh/cloudmesh-cloud/tree/master/cloudmesh/compute/azure
+[Link to benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
 
 ## Goal
 
-* Extend the current cloudmesh-compute-azure to include security group functions. 
+* Benchmark the current cloudmesh compute commands on different providers 
 
+### Result
+![benchmark result](../images/benchmark_res.PNG)
+
+### Insights
+* aws is the most efficient out of 3 providers, as expected
+* azure is really fast in retrieving flavor and image list compared to aws
+* azure takes long time to boot vm compared to aws because azure has to create 
+all resources one by one where aws has default resources ready, and the azure api has long poller structure.
+* same as previous point, azure terminate takes long time because the provider will delete every resource 
+related to the terminating vm, which is a potential bug if two vm share same resources.
+
+### Discoveries
+* ssh error, seems to be a mongodb key lookup error when looking for publicIP, but there are users
+stated that ssh works for them
+  ![ssh error](../images/ssh-error.PNG)
+* Chameleon: 
+    * booting multiple vms will definitely fail because sometimes chameleon takes long time
+     to boot 1 vm (longest I've encountered is 11 minutes) and provider will time out 
+    * user will encounter problem if he try to start vm immediately after stop vm, or vice versa
+    chameleon takes longer time to process the vm actions 
+* AWS:
+    * cms image list --refresh will encounter error, the correct results are retrieved successfully
+    from aws, the results are stored in temp file in .cloudmesh and is correct.
+    ![aws-image-error](../images/aws-image-error.PNG)
+    The error is likely with the mongodb operations in aws provider
+    * vm terminate outputs error but it actually works, it is likely the flatdict function encountered
+    empty dictionary when trying to display result
+ * Azure:
+    * user need to use command `cms set key=keyname` & `cms key init` before using azure as cloud,
+    `cms init` doesn't include `key init`.
+    * vm terminate in azure provider should be restructured to terminate the vm only, currently terminate
+    will delete all resource related to vm, if two vm share same resources such as NIC, SecGroup then terminate
+    can cause error.
+    * cms image list --refresh doesn't seem to be displaying the correct images, the displayed images
+    doesn't seem to be official images like Ubuntu, Centos, following table is the azure image output
+    
+
+    | Name    | Location | Publisher     | Plan Name                | Product                  | Operating System |
+
+    +---------+----------+---------------+--------------------------+--------------------------+------------------+
+
+    | 1.0.0   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
+
+    | 1.1.0   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
+
+    | 1.1.2   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
+
+    | 4.10.11 | eastus   | 1e            | tachyonv4-1              | tachyonv30-0-100         |                  |
+
+    | 0.0.2   | eastus   | 2021ai        | grace_vm                 | grace-churn-vm           |                  |
+
+    | 16.0.8  | eastus   | 3cx-pbx       | 16                       | 3cx-pbx                  |                  |
+
+    | 5.2.5   | eastus   | 4psa          | vpn525-single            | voipnow                  |                  |
+
+    +---------+----------+---------------+--------------------------+--------------------------+------------------+
+
+    
 ## Progress
 
 ### Week 8 October 14
 
 * Implemented a script using azure python libraries to start compute service without cloudmesh
 * Found the methods needed to create security group in azure package
-* Successfullly created security group when creating vm 
+* Successfully created security group when creating vm 
 * [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 
 ### Week 9 October 21
 * Attached Network Security Group when creating VM
 * [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
-## TODO
 
-- [x]  Attach security group when starting compute service(create vm)
-* Integrate the script with cloudmesh-compute-azure
-* Test the functionality of cloudmesh-compute-azure
-* Benchmark the finished cloudmesh-compute-azure
+### Week 10 October 28
+* Started working in cloudmesh-compute-azure, added network secGroup attachment
+* [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+
+### Week 11 November 4
+* Added key attachment during vm creation
+* Solved error within local env, had to reinstall cloudmesh
+* [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+
+### Week 12 November 11
+* added ssh function in azure provider
+* restructured local repo to work directly in environment
+* [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+
+### Week 13 November 18
+* The provider was finished by TA, changing to benchmark compute providers
+* Solved a minor bug in cms vm start
+* Wrote a script that will run compute commands through different clouds
+* [Link to benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
+* Documented instructions on how to generate important credentials for azure API
+
 
 ## Reference
 
