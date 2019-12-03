@@ -2,10 +2,10 @@
 
 Chenxu Wang, fa19-516-157
 
-[fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
+* [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 
-[Link to benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
-
+* [Link to custom benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
+* [Link to custom benchmark output](https://raw.githubusercontent.com/cloudmesh-community/fa19-516-157/master/benchOutput.txt)
 ## Goal
 
 * Benchmark the current cloudmesh compute commands on different providers 
@@ -102,6 +102,14 @@ stated that ssh works for them
 * [Link to benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
 * Documented instructions on how to generate important credentials for azure API
 * [Link to credential instruction](https://github.com/cloudmesh-community/fa19-516-157/blob/master/azure_credentials.md)
+
+### Week 15 December 2
+* Benchmarked cloudmesh with cloudmesh tests
+* [Link to 1-local-wang542](https://github.com/wang542/benchmark/blob/wang542/results/1_local-wang542.md)
+* [Link to cloud-aws-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542.md)
+* [Link to cloud-openstack-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542.md)
+* [Link to cloud-azure-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542.md)
+* [Link to complete output of benchmarkers](https://github.com/cloudmesh-community/fa19-516-157/tree/master/Benchmark_Output)
 
 
 ## Reference
