@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+_________________ ERROR collecting tests/1_local/test_data.py _________________
+ImportError while importing test module 'D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud\tests\1_local\test_data.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests\1_local\test_data.py:5: in <module>
+    import grp
+E   ModuleNotFoundError: No module named 'grp'
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 1 error in 0.05s ===============================

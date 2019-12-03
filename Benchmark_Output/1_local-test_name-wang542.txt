@@ -1,0 +1,199 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 8 items
+
+tests/1_local/test_name.py::TestName::test_define FAILED
+tests/1_local/test_name.py::TestName::test_define_new {'counter': 1,
+ 'kind': 'vm',
+ 'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+FAILED
+tests/1_local/test_name.py::TestName::test_name_reset PASSED
+tests/1_local/test_name.py::TestName::test_name_print wang542-vm-1
+FAILED
+tests/1_local/test_name.py::TestName::test_name_dict {'counter': 1,
+ 'kind': 'vm',
+ 'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+FAILED
+tests/1_local/test_name.py::TestName::test_name_incr wang542-vm-2
+FAILED
+tests/1_local/test_name.py::TestName::test_name_counter 2
+{'counter': 2,
+ 'kind': 'vm',
+ 'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+{'counter': 2,
+ 'kind': 'vm',
+ 'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+wang542-vm-2
+PASSED
+tests/1_local/test_name.py::TestName::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 5.9 GiB                                                                           |
+| mem_free          | 5.9 GiB                                                                           |
+| mem_percent       | 62.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 10.0 GiB                                                                          |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++-----------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                       | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_name/test_define       | 0.006 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new   | 0.005 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset   | 0.005 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print   |       | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict    | 0.003 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr    | 0.004 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter | 0.003 | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop        | 0.0   | 2019-12-02 22:04:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_name/test_define,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+____________________________ TestName.test_define _____________________________
+
+self = <test_name.TestName object at 0x00000245F8B6C6C8>
+
+    def test_define(self):
+        Benchmark.Start()
+        n = Name()
+        Benchmark.Stop()
+>       assert dict(data) == n.dict()
+E       AssertionError: assert {'counter': 1...d': 'vm', ...} == {'counter': 1...r': 'wang542'}
+E         Omitting 2 identical items, use -vv to show
+E         Differing items:
+E         {'user': 'user'} != {'user': 'wang542'}
+E         {'schema': '{experiment}-{group}-{user}-{kind}-{counter}'} != {'schema': '{user}-vm-{counter}'}
+E         Left contains 3 more items:
+E         {'experiment': 'exp', 'group': 'group', 'kind': 'vm'}
+E         Full diff:...
+E         
+E         ...Full output truncated (10 lines hidden), use '-vv' to show
+
+tests\1_local\test_name.py:42: AssertionError
+__________________________ TestName.test_define_new ___________________________
+
+self = <test_name.TestName object at 0x00000245F8BB01C8>
+
+    def test_define_new(self):
+        os.remove(path)
+    
+        Benchmark.Start()
+        n = Name(schema="{user}-{kind}-{counter}",
+                 counter="3",
+                 user="gregor",
+                 kind="vm")
+        Benchmark.Stop()
+        data = n.dict()
+        pprint(data)
+>       assert data == dict({'counter': 3,
+                             'kind': 'vm',
+                             'path': '/Users/grey/.cloudmesh/name.yaml',
+                             'schema': '{user}-{kind}-{counter}',
+                             'user': 'gregor'})
+E       AssertionError: assert {'counter': 1...ounter}', ...} == {'counter': 3...ounter}', ...}
+E         Omitting 2 identical items, use -vv to show
+E         Differing items:
+E         {'user': 'wang542'} != {'user': 'gregor'}
+E         {'counter': 1} != {'counter': 3}
+E         {'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml'} != {'path': '/Users/grey/.cloudmesh/name.yaml'}
+E         Full diff:
+E         - {'counter': 1,...
+E         
+E         ...Full output truncated (12 lines hidden), use '-vv' to show
+
+tests\1_local\test_name.py:55: AssertionError
+__________________________ TestName.test_name_print ___________________________
+
+self = <test_name.TestName object at 0x00000245F8BB83C8>
+
+    def test_name_print(self):
+        n = Name()
+        Benchmark.Start()
+        print(n)
+        Benchmark.Start()
+>       assert str(n) == "gregor-vm-1"
+E       AssertionError: assert 'wang542-vm-1' == 'gregor-vm-1'
+E         - wang542-vm-1
+E         + gregor-vm-1
+
+tests\1_local\test_name.py:73: AssertionError
+___________________________ TestName.test_name_dict ___________________________
+
+self = <test_name.TestName object at 0x00000245F8BBC5C8>
+
+    def test_name_dict(self):
+        n = Name()
+        pprint(n.dict())
+        Benchmark.Start()
+        data = n.dict()
+        Benchmark.Stop()
+>       assert data == dict({'counter': 1,
+                             'kind': 'vm',
+                             'path': '/Users/grey/.cloudmesh/name.yaml',
+                             'schema': '{user}-{kind}-{counter}',
+                             'user': 'gregor'})
+E       AssertionError: assert {'counter': 1...ounter}', ...} == {'counter': 1...ounter}', ...}
+E         Omitting 3 identical items, use -vv to show
+E         Differing items:
+E         {'user': 'wang542'} != {'user': 'gregor'}
+E         {'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml'} != {'path': '/Users/grey/.cloudmesh/name.yaml'}
+E         Full diff:
+E         {'counter': 1,
+E         'kind': 'vm',...
+E         
+E         ...Full output truncated (8 lines hidden), use '-vv' to show
+
+tests\1_local\test_name.py:81: AssertionError
+___________________________ TestName.test_name_incr ___________________________
+
+self = <test_name.TestName object at 0x00000245F8BC0B88>
+
+    def test_name_incr(self):
+        n = Name()
+        Benchmark.Start()
+        n.incr()
+        Benchmark.Stop()
+        print(n)
+>       assert str(n) == "gregor-vm-2"
+E       AssertionError: assert 'wang542-vm-2' == 'gregor-vm-2'
+E         - wang542-vm-2
+E         + gregor-vm-2
+
+tests\1_local\test_name.py:93: AssertionError
+========================= 5 failed, 3 passed in 1.03s =========================

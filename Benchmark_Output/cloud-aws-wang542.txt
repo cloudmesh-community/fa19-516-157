@@ -1,0 +1,2167 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 28:<module> .\tests\cloud\test_07_secgroup_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'wang542-key',
+#  'refresh': 'False',
+#  'timer': 'False',
+#  'trace': 'True',
+#  'verbose': '10',
+#  'vm': 'wang542-vm'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 26:<module> .\tests\cloud\test_08_vm_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'wang542-key',
+#  'refresh': 'False',
+#  'timer': 'False',
+#  'trace': 'True',
+#  'verbose': '10',
+#  'vm': 'wang542-vm'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+collected 71 items
+
+tests/cloud/test_00_sys.py::Test_Sys::test_cms_help 
+[35m
+# ######################################################################
+# test_cms_help \tests\cloud\test_00_sys.py 30
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 36:test_cms_help .\tests\cloud\test_00_sys.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\r\n'
+#  '========================================\r\n'
+#  'EOF       container  help       man       register  ssh        '
+#  'vbox          \r\n'
+#  'admin     data       image      open      sec       start      '
+#  'vcluster      \r\n'
+#  'banner    debug      info       pause     service   stop       '
+#  'vdir          \r\n'
+#  'chenxu    default    init       plugin    set       stopwatch  '
+#  'version       \r\n'
+#  'clear     echo       inventory  provider  shell     storage    '
+#  'vm            \r\n'
+#  'commands  flavor     ip         q         sleep     sys        '
+#  'workflow_draft\r\n'
+#  'config    group      key        quit      source    var')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/cloud/test_00_sys.py::Test_Sys::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 6.5 GiB                                                                           |
+| mem_free          | 6.5 GiB                                                                           |
+| mem_percent       | 59.4%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 9.5 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                     | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help | 2.604 | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop      | 0.0   | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_cms_init MongoDB stop
+server should be down...
+MongoDB folder deleted
+Set key
+MongoDB create
+MongoDB create
+INFO: Starting mongo without authentication ... 
+"C:\Users\wangc\.cloudmesh\mongo\bin\mongod"  --bind_ip 127.0.0.1 --dbpath "C:\Users\wangc\.cloudmesh\mongodb-data" --logpath "C:\Users\wangc\.cloudmesh\mongodb-data\log\mongod.log"
+wscript.exe "C:\Users\wangc\.cloudmesh\mongodb-data/invisible.vbs" "C:\Users\wangc\.cloudmesh\mongodb-data/mongo_starter.bat"
+mongod child process should be started successfully.
+None
+INFO: Creating admin user ... 
+Administrative user created.
+INFO: Stopping the service ... 
+server should be down...
+MongoDB start
+"C:\Users\wangc\.cloudmesh\mongo\bin\mongod" --auth --bind_ip 127.0.0.1 --dbpath "C:\Users\wangc\.cloudmesh\mongodb-data" --logpath "C:\Users\wangc\.cloudmesh\mongodb-data\log\mongod.log"
+wscript.exe "C:\Users\wangc\.cloudmesh\mongodb-data/invisible.vbs" "C:\Users\wangc\.cloudmesh\mongodb-data/mongo_starter.bat"
+mongod child process should be started successfully.
+None
+
++---------+-------+----------+-----------+-----------+
+| Group   | Rule  | Protocol | Ports     | IP Range  |
++---------+-------+----------+-----------+-----------+
+| default | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| default | icmp  | icmp     |           | 0.0.0.0/0 |
+| default | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| default | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| flask   | icmp  | icmp     |           | 0.0.0.0/0 |
+| flask   | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| flask   | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | flask | tcp      | 8000:8000 | 0.0.0.0/0 |
++---------+-------+----------+-----------+-----------+
+
+Variables
+
+    trace=True
+    debug=True
+    group=cloudmesh
+    experiment=base
+    cloud=aws
+    cluster=clustera
+    timer=False
+    key=wang542
+    vm=wang542-vm
+    verbose=10
+    refresh=False
+
+[35m
+# ######################################################################
+# test_cms_init \tests\cloud\test_01_clean_local_remote.py 36
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_keys_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_keys_from_cloud \tests\cloud\test_01_clean_local_remote.py 42
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_secgroups_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_secgroups_from_cloud \tests\cloud\test_01_clean_local_remote.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time   | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604  | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0    | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585 | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003  | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003  | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_cleanup 
+[35m
+# ######################################################################
+# test_cleanup \tests\cloud\test_02_key.py 38
+# ######################################################################
+[0m
+deleting the key: test-key -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_database 
+[35m
+# ######################################################################
+# test_upload_key_to_database \tests\cloud\test_02_key.py 46
+# ######################################################################
+[0m
+<cloudmesh.key.Key.Key object at 0x000001ACB33A7208>
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_cloud 
+[35m
+# ######################################################################
+# test_upload_key_to_cloud \tests\cloud\test_02_key.py 57
+# ######################################################################
+[0m
+{'_id': ObjectId('5de592f86b6c66dc67fcbe2c'),
+ 'cm': {'cloud': 'local',
+        'collection': 'local-key',
+        'created': '2019-12-02 22:40:56.495220',
+        'kind': 'key',
+        'modified': '2019-12-02 22:40:56.495220',
+        'name': 'test-key'},
+ 'comment': 'wangchenxu1995@gmail.com',
+ 'fingerprint': 'd1:51:83:f0:dd:70:99:81:3b:6a:19:bf:49:38:98:24',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q==',
+ 'location': {'private': 'C:\\Users\\wangc\\.ssh\\id_rsa',
+              'public': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub'},
+ 'name': 'test-key',
+ 'path': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'profile': {'email': 'wang542@iu.edu',
+             'firstname': 'chenxu',
+             'github': 'wang542',
+             'lastname': 'wang',
+             'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+             'user': 'wang542'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q== '
+               'wangchenxu1995@gmail.com',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file://C:\\Users\\wangc\\.ssh\\id_rsa.pub'}
+uploading the key: test-key -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_list_key_from_cloud 
+[35m
+# ######################################################################
+# test_list_key_from_cloud \tests\cloud\test_02_key.py 73
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_delete_key_from_cloud 
+[35m
+# ######################################################################
+# test_delete_key_from_cloud \tests\cloud\test_02_key.py 91
+# ######################################################################
+[0m
+deleting the key: test-key -> aws
+None
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_get_key_from_cloud 
+[35m
+# ######################################################################
+# test_get_key_from_cloud \tests\cloud\test_02_key.py 101
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time   | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604  | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0    | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585 | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003  | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003  | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316  | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119  | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397  | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127  | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+--------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_cleanup SKIPPED
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_database SKIPPED
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_cloud SKIPPED
+tests/cloud/test_03_key_upload.py::Test_Key::test_list_key_from_cloud SKIPPED
+tests/cloud/test_03_key_upload.py::Test_Key::test_benchmark SKIPPED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database \tests\cloud\test_04_flavor.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor 
+[35m
+# ######################################################################
+# test_provider_flavor \tests\cloud\test_04_flavor.py 43
+# ######################################################################
+[0m
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/region_index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/20191126001001/us-east-1/index.json
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor_update 
+[35m
+# ######################################################################
+# test_provider_flavor_update \tests\cloud\test_04_flavor.py 50
+# ######################################################################
+[0m
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/region_index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/20191126001001/us-east-1/index.json
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor_refresh 
+[35m
+# ######################################################################
+# test_cms_flavor_refresh \tests\cloud\test_04_flavor.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor 
+[35m
+# ######################################################################
+# test_cms_flavor \tests\cloud\test_04_flavor.py 66
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database \tests\cloud\test_05_image.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image 
+[35m
+# ######################################################################
+# test_provider_image \tests\cloud\test_05_image.py 43
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+FAILED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update 
+[35m
+# ######################################################################
+# test_provider_image_update \tests\cloud\test_05_image.py 50
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+FAILED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image_refresh 
+[35m
+# ######################################################################
+# test_cms_image_refresh \tests\cloud\test_05_image.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image 
+[35m
+# ######################################################################
+# test_cms_image \tests\cloud\test_05_image.py 66
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 23:02:39 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_empty_database                               | 0.338   | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image                               |         | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image_update                        |         | 2019-12-02 22:58:09 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image_refresh                            | 138.662 | 2019-12-02 23:00:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image                                    | 3.861   | 2019-12-02 23:02:35 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_empty_database,0.338,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image_update,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image_refresh,138.662,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image,3.861,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_clear PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_add 
+[35m
+# ######################################################################
+# test_group_add \tests\cloud\test_06_sec_command.py 70
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_delete 
+[35m
+# ######################################################################
+# test_group_delete \tests\cloud\test_06_sec_command.py 80
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_init 
+[35m
+# ######################################################################
+# test_sec_init \tests\cloud\test_06_sec_command.py 89
+# ######################################################################
+[0m
+
+
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_add_group_wrong 
+[35m
+# ######################################################################
+# test_sec_add_group_wrong \tests\cloud\test_06_sec_command.py 108
+# ######################################################################
+[0m
+INFO: Security group doesn't exist
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_list 
+[35m
+# ######################################################################
+# test_sec_list \tests\cloud\test_06_sec_command.py 116
+# ######################################################################
+[0m
++----------+----------+-----------+-----------+
+| Name     | Protocol | Ports     | IP Range  |
++----------+----------+-----------+-----------+
+| ssh      | tcp      | 22:22     | 0.0.0.0/0 |
+| icmp     | icmp     |           | 0.0.0.0/0 |
+| flask    | tcp      | 8000:8000 | 0.0.0.0/0 |
+| http     | tcp      | 80:80     | 0.0.0.0/0 |
+| https    | tcp      | 443:443   | 0.0.0.0/0 |
+| deleteme | tcp      | 101:101   | 10.0.0.00 |
++----------+----------+-----------+-----------+
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_local 
+[35m
+# ######################################################################
+# test_sec_group_list_local \tests\cloud\test_06_sec_command.py 131
+# ######################################################################
+[0m
++---------+-------------------------------+------------------------+
+| Name    | Rules                         | Description            |
++---------+-------------------------------+------------------------+
+| default | ssh, icmp, http, https        | Default security group |
+| flask   | ssh, icmp, http, https, flask | Flask security group   |
+| wrong   | nothing                       | wrong                  |
++---------+-------------------------------+------------------------+
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_cloud 
+[35m
+# ######################################################################
+# test_sec_group_list_cloud \tests\cloud\test_06_sec_command.py 142
+# ######################################################################
+[0m
+cloud aws
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+| Name    | Direction | Ethertype | Port range max | Port range min | Protocol | Range     | Remote group id |
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+| default | Inbound   |           |                |                | -1       | 0.0.0.0/0 |                 |
+| default | Inbound   |           | 22             | 22             | tcp      | 0.0.0.0/0 |                 |
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 23:03:12 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_empty_database                               | 0.338   | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image                               |         | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image_update                        |         | 2019-12-02 22:58:09 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image_refresh                            | 138.662 | 2019-12-02 23:00:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image                                    | 3.861   | 2019-12-02 23:02:35 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_add                              | 4.153   | 2019-12-02 23:02:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_delete                           | 3.563   | 2019-12-02 23:02:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_list                               | 3.49    | 2019-12-02 23:03:00 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_local                   | 3.58    | 2019-12-02 23:03:04 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.504   | 2019-12-02 23:03:08 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_empty_database,0.338,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image_update,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image_refresh,138.662,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image,3.861,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_add,4.153,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_delete,3.563,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_list,3.49,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_local,3.58,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.504,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_load 
+[35m
+# ######################################################################
+# test_load \tests\cloud\test_07_secgroup_provider.py 56
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_variables 
+[35m
+# ######################################################################
+# test_list_variables \tests\cloud\test_07_secgroup_provider.py 72
+# ######################################################################
+[0m
+wang542
+aws
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups 
+[35m
+# ######################################################################
+# test_list_secgroups \tests\cloud\test_07_secgroup_provider.py 80
+# ######################################################################
+[0m
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-e39541b3",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups_rules 
+[35m
+# ######################################################################
+# test_list_secgroups_rules \tests\cloud\test_07_secgroup_provider.py 87
+# ######################################################################
+[0m
+{
+    "0": {
+        "IpProtocol": "-1",
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_add 
+[35m
+# ######################################################################
+# test_secgroups_add \tests\cloud\test_07_secgroup_provider.py 94
+# ######################################################################
+[0m
+[32mSecurity Group Created sg-0a08d5adb950c0faf in vpcvpc-bbf8b6c1[0m
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-e39541b3",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_upload_secgroup 
+[35m
+# ######################################################################
+# test_upload_secgroup \tests\cloud\test_07_secgroup_provider.py 103
+# ######################################################################
+[0m
+Warning group already exists
+[34m
+# ----------------------------------------------------------------------
+# rules
+# ----------------------------------------------------------------------
+# 302:upload_secgroup d:\school\b649_engineeringcloudcomputing\env4\cm\cloudmesh-cloud\cloudmesh\compute\aws\Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-02 23:03:13.119240',
+#          'kind': 'secrule',
+#          'modified': '2019-12-02 23:03:13.119240',
+#          'name': 'ssh'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'ssh',
+#   'ports': '22:22',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-02 23:03:13.120282',
+#          'kind': 'secrule',
+#          'modified': '2019-12-02 23:03:13.120282',
+#          'name': 'icmp'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'icmp',
+#   'ports': '',
+#   'protocol': 'icmp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-02 23:03:13.121239',
+#          'kind': 'secrule',
+#          'modified': '2019-12-02 23:03:13.121239',
+#          'name': 'flask'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'flask',
+#   'ports': '8000:8000',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-02 23:03:13.122282',
+#          'kind': 'secrule',
+#          'modified': '2019-12-02 23:03:13.122282',
+#          'name': 'http'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'http',
+#   'ports': '80:80',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-02 23:03:13.123284',
+#          'kind': 'secrule',
+#          'modified': '2019-12-02 23:03:13.123284',
+#          'name': 'https'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'https',
+#   'ports': '443:443',
+#   'protocol': 'tcp'}]
+# ----------------------------------------------------------------------
+[0m
+[34m
+# ----------------------------------------------------------------------
+# groups
+# ----------------------------------------------------------------------
+# 307:upload_secgroup d:\school\b649_engineeringcloudcomputing\env4\cm\cloudmesh-cloud\cloudmesh\compute\aws\Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-02 23:03:13.117285',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-02 23:03:13.117285',
+#          'name': 'default'},
+#   'description': 'Default security group',
+#   'name': 'default',
+#   'rules': ['ssh', 'icmp', 'http', 'https']},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-02 23:03:13.118242',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-02 23:03:13.118242',
+#          'name': 'flask'},
+#   'description': 'Flask security group',
+#   'name': 'flask',
+#   'rules': ['ssh', 'icmp', 'http', 'https', 'flask']}]
+# ----------------------------------------------------------------------
+[0m
+upload group: Test_Sec_Group
+     rule: ssh
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'f7012eeb-d487-4207-b00c-bcc1d23ebdf0', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Mon, 02 Dec 2019 23:03:14 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: icmp
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '6f0ed3bf-0f76-43a7-802a-47fa72f94d6c', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Mon, 02 Dec 2019 23:03:15 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: http
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'de992a77-ad29-42f4-a32d-2faaafdcaed2', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Mon, 02 Dec 2019 23:03:15 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: https
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '9ad48960-f559-4fe1-b8ad-738447b4c5a4', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Mon, 02 Dec 2019 23:03:15 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: flask
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'a2109897-284f-445c-bdc5-9c7cbb26e76c', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Mon, 02 Dec 2019 23:03:16 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+{
+    "0": {
+        "Description": "security group crated at 2019-12-02 23:03:14.353678 by wang542",
+        "GroupId": "sg-0a08d5adb950c0faf",
+        "GroupName": "Test_Sec_Group",
+        "IpPermissions": [
+            {
+                "FromPort": 80,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 80,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 8000,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 8000,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 443,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 443,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": -1,
+                "IpProtocol": "icmp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": -1,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    },
+    "1": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-e39541b3",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete 
+[35m
+# ######################################################################
+# test_secgroups_delete \tests\cloud\test_07_secgroup_provider.py 112
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# response
+# ----------------------------------------------------------------------
+# 282:remove_secgroup d:\school\b649_engineeringcloudcomputing\env4\cm\cloudmesh-cloud\cloudmesh\compute\aws\Provider.py
+# ----------------------------------------------------------------------
+# {'ResponseMetadata': {'HTTPHeaders': {'content-length': '239',
+#                                       'content-type': 'text/xml;charset=UTF-8',
+#                                       'date': 'Mon, 02 Dec 2019 23:03:16 GMT',
+#                                       'server': 'AmazonEC2'},
+#                       'HTTPStatusCode': 200,
+#                       'RequestId': '9ce5741a-ac21-49dd-a041-5271de3f0b10',
+#                       'RetryAttempts': 0}}
+# ----------------------------------------------------------------------
+[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-e39541b3",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete_again 
+[35m
+# ######################################################################
+# test_secgroups_delete_again \tests\cloud\test_07_secgroup_provider.py 129
+# ######################################################################
+[0m
+[34mINFO: Security group couldn't be removed as it doesn't exist[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-e39541b3",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "699537851738",
+        "VpcId": "vpc-bbf8b6c1"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 23:03:18 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_empty_database                               | 0.338   | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image                               |         | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image_update                        |         | 2019-12-02 22:58:09 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image_refresh                            | 138.662 | 2019-12-02 23:00:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image                                    | 3.861   | 2019-12-02 23:02:35 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_add                              | 4.153   | 2019-12-02 23:02:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_delete                           | 3.563   | 2019-12-02 23:02:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_list                               | 3.49    | 2019-12-02 23:03:00 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_local                   | 3.58    | 2019-12-02 23:03:04 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.504   | 2019-12-02 23:03:08 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_load                             | 0.348   | 2019-12-02 23:03:12 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_variables                   | 0.004   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.318   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.131   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.237   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.598   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.211   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.101   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_empty_database,0.338,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image_update,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image_refresh,138.662,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image,3.861,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_add,4.153,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_delete,3.563,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_list,3.49,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_local,3.58,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.504,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_load,0.348,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_variables,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups,0.318,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.131,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_add,0.237,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.211,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.101,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create 
+[35m
+# ######################################################################
+# test_provider_vm_create \tests\cloud\test_08_vm_provider.py 55
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
+[0m
+    Name:    test-wang542-vm-4
+    IP:      None
+    Image:   ami-00dc79254d0461090
+    Size:    t2.micro
+    Public:  None
+    Key:     wang542-key
+    location:None
+    timeout: 360
+    secgroup:None
+    group:   cloudmesh
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vmprovider_vm_list 
+[35m
+# ######################################################################
+# test_provider_vmprovider_vm_list \tests\cloud\test_08_vm_provider.py 71
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_wait 
+[35m
+# ######################################################################
+# test_provider_vm_wait \tests\cloud\test_08_vm_provider.py 79
+# ######################################################################
+[0m
+[34mINFO: waiting for instance to be reachable: Interval: 5, Timeout: 360[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_ssh 
+[35m
+# ######################################################################
+# test_provider_vm_ssh \tests\cloud\test_08_vm_provider.py 88
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_info 
+[35m
+# ######################################################################
+# test_provider_vm_info \tests\cloud\test_08_vm_provider.py 102
+# ######################################################################
+[0m
+dry run info():
+[{}]
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_vm_status 
+[35m
+# ######################################################################
+# test_vm_status \tests\cloud\test_08_vm_provider.py 111
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_stop 
+[35m
+# ######################################################################
+# test_provider_vm_stop \tests\cloud\test_08_vm_provider.py 123
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_start 
+[35m
+# ######################################################################
+# test_provider_vm_start \tests\cloud\test_08_vm_provider.py 141
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_terminate 
+[35m
+# ######################################################################
+# test_provider_vm_terminate \tests\cloud\test_08_vm_provider.py 163
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+None
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 23:09:39 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_empty_database                               | 0.338   | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image                               |         | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image_update                        |         | 2019-12-02 22:58:09 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image_refresh                            | 138.662 | 2019-12-02 23:00:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image                                    | 3.861   | 2019-12-02 23:02:35 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_add                              | 4.153   | 2019-12-02 23:02:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_delete                           | 3.563   | 2019-12-02 23:02:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_list                               | 3.49    | 2019-12-02 23:03:00 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_local                   | 3.58    | 2019-12-02 23:03:04 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.504   | 2019-12-02 23:03:08 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_load                             | 0.348   | 2019-12-02 23:03:12 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_variables                   | 0.004   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.318   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.131   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.237   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.598   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.211   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.101   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_create                     |         | 2019-12-02 23:03:18 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| create vm test-wang542-vm-4                                     |         | 2019-12-02 23:03:18 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            |         | 2019-12-02 23:03:19 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-02 23:03:20 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-02 23:09:21 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_info                       | 0.358   | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_vm_status                              |         | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_stop                       | 0.549   | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_start                      | 0.484   | 2019-12-02 23:09:28 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_terminate                  | 0.097   | 2019-12-02 23:09:33 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_empty_database,0.338,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image_update,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image_refresh,138.662,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image,3.861,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_add,4.153,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_delete,3.563,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_list,3.49,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_local,3.58,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.504,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_load,0.348,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_variables,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups,0.318,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.131,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_add,0.237,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.211,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.101,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_create,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,create vm test-wang542-vm-4,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_info,0.358,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_vm_status,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_stop,0.549,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_start,0.484,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_terminate,0.097,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_collection 
+[35m
+# ######################################################################
+# test_cm_find_collection \tests\cloud\test_09_cm_names_find.py 34
+# ######################################################################
+[0m
+Number of entries [vm] 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_loop 
+[35m
+# ######################################################################
+# test_cm_find_loop \tests\cloud\test_09_cm_names_find.py 45
+# ######################################################################
+[0m
+Number of entries [flavor 14801
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_loop 
+[35m
+# ######################################################################
+# test_cm_loop \tests\cloud\test_09_cm_names_find.py 61
+# ######################################################################
+[0m
+Number of entries [flavor] 14801
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_cloud 
+[35m
+# ######################################################################
+# test_cm_image_name_cloud \tests\cloud\test_09_cm_names_find.py 74
+# ######################################################################
+[0m
+Number of entries [image 0
+FAILED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_collection 
+[35m
+# ######################################################################
+# test_cm_image_name_collection \tests\cloud\test_09_cm_names_find.py 86
+# ######################################################################
+[0m
+Number of entries [image 0
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_names_regexp 
+[35m
+# ######################################################################
+# test_names_regexp \tests\cloud\test_09_cm_names_find.py 97
+# ######################################################################
+[0m
+Number of entries [image 0
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vms 
+[35m
+# ######################################################################
+# test_cm_find_vms \tests\cloud\test_09_cm_names_find.py 120
+# ######################################################################
+[0m
+Number of entries [vm 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_ubuntu_in_images 
+[35m
+# ######################################################################
+# test_cm_find_ubuntu_in_images \tests\cloud\test_09_cm_names_find.py 131
+# ######################################################################
+[0m
+
+{'name': {'$regex': '.*Ubuntu.*'}}
+Number of entries [image 0
+FAILED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_cloud_name_attributes 
+[35m
+# ######################################################################
+# test_cm_find_cloud_name_attributes \tests\cloud\test_09_cm_names_find.py 171
+# ######################################################################
+[0m
+
+Number of entries [vm 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections 
+[35m
+# ######################################################################
+# test_cm_find_vm_collections \tests\cloud\test_09_cm_names_find.py 187
+# ######################################################################
+[0m
+Number of entries [collections] 6
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections_vm 
+[35m
+# ######################################################################
+# test_cm_find_vm_collections_vm \tests\cloud\test_09_cm_names_find.py 200
+# ######################################################################
+[0m
+Number of entries [collections] 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collection_form_parameter 
+[35m
+# ######################################################################
+# test_cm_find_vm_collection_form_parameter \tests\cloud\test_09_cm_names_find.py 212
+# ######################################################################
+[0m
+Number of entries [collections] 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                                           | time    | start               | tag | node                 | user | system  | mac_version | win_version                     |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_00_sys/test_cms_help                                       | 2.604   | 2019-12-02 22:40:32 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                                            | 0.0     | 2019-12-02 23:09:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_cms_init                        | 19.585  | 2019-12-02 22:40:34 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.003   | 2019-12-02 22:40:55 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_database                         | 0.316   | 2019-12-02 22:40:56 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_upload_key_to_cloud                            | 0.119   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_list_key_from_cloud                            | 0.397   | 2019-12-02 22:40:57 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_02_key/test_delete_key_from_cloud                          | 0.127   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_empty_database                              | 0.317   | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor                             | 182.772 | 2019-12-02 22:40:58 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_provider_flavor_update                      | 343.193 | 2019-12-02 22:44:01 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor_refresh                          | 355.56  | 2019-12-02 22:49:45 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_04_flavor/test_cms_flavor                                  | 6.964   | 2019-12-02 22:55:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_empty_database                               | 0.338   | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image                               |         | 2019-12-02 22:55:47 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_provider_image_update                        |         | 2019-12-02 22:58:09 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image_refresh                            | 138.662 | 2019-12-02 23:00:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_05_image/test_cms_image                                    | 3.861   | 2019-12-02 23:02:35 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_add                              | 4.153   | 2019-12-02 23:02:40 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_group_delete                           | 3.563   | 2019-12-02 23:02:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_list                               | 3.49    | 2019-12-02 23:03:00 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_local                   | 3.58    | 2019-12-02 23:03:04 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.504   | 2019-12-02 23:03:08 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_load                             | 0.348   | 2019-12-02 23:03:12 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_variables                   | 0.004   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.318   | 2019-12-02 23:03:13 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.131   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.237   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.598   | 2019-12-02 23:03:14 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.211   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.101   | 2019-12-02 23:03:17 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_create                     |         | 2019-12-02 23:03:18 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| create vm test-wang542-vm-4                                     |         | 2019-12-02 23:03:18 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            |         | 2019-12-02 23:03:19 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-02 23:03:20 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-02 23:09:21 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_info                       | 0.358   | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_vm_status                              |         | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_stop                       | 0.549   | 2019-12-02 23:09:22 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_start                      | 0.484   | 2019-12-02 23:09:28 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_08_vm_provider/test_provider_vm_terminate                  | 0.097   | 2019-12-02 23:09:33 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_collection                   | 0.353   | 2019-12-02 23:09:39 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_loop                         | 1.212   | 2019-12-02 23:09:39 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_image_name_cloud                  | 0.313   | 2019-12-02 23:09:41 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_image_name_collection             | 0.324   | 2019-12-02 23:09:41 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_names_regexp                         | 0.621   | 2019-12-02 23:09:42 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_vms                          | 0.324   | 2019-12-02 23:09:42 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_ubuntu_in_images             | 0.314   | 2019-12-02 23:09:43 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_cloud_name_attributes        | 0.309   | 2019-12-02 23:09:43 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_vm_collections               | 0.312   | 2019-12-02 23:09:43 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_vm_collections_vm            | 0.305   | 2019-12-02 23:09:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_09_cm_names_find/test_cm_find_vm_collection_form_parameter | 0.304   | 2019-12-02 23:09:44 | aws | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++-----------------------------------------------------------------+---------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,2.604,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_cms_init,19.585,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_database,0.316,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_upload_key_to_cloud,0.119,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_list_key_from_cloud,0.397,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_02_key/test_delete_key_from_cloud,0.127,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_empty_database,0.317,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor,182.772,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_provider_flavor_update,343.193,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor_refresh,355.56,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_04_flavor/test_cms_flavor,6.964,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_empty_database,0.338,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_provider_image_update,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image_refresh,138.662,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_05_image/test_cms_image,3.861,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_add,4.153,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_group_delete,3.563,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_list,3.49,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_local,3.58,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.504,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_load,0.348,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_variables,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups,0.318,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.131,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_add,0.237,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.211,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.101,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_create,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,create vm test-wang542-vm-4,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_info,0.358,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_vm_status,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_stop,0.549,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_start,0.484,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_08_vm_provider/test_provider_vm_terminate,0.097,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_collection,0.353,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_loop,1.212,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_image_name_cloud,0.313,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_image_name_collection,0.324,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_names_regexp,0.621,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_vms,0.324,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_ubuntu_in_images,0.314,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_cloud_name_attributes,0.309,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_vm_collections,0.312,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_vm_collections_vm,0.305,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_09_cm_names_find/test_cm_find_vm_collection_form_parameter,0.304,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+_______________________ Test_Image.test_provider_image ________________________
+
+self = <test_05_image.Test_Image object at 0x000001ACAEEA9D08>
+
+    def test_provider_image(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.images()
+
+tests\cloud\test_05_image.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:86: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:151: in images
+    return self.p.images(*args, **kwargs)
+cloudmesh\compute\aws\Provider.py:1274: in images
+    self.get_images_and_import(data)
+cloudmesh\mongo\DataBaseDecorator.py:127: in wrapper
+    result = self.database.importAsFile(data,collection,db)
+cloudmesh\mongo\CmDatabase.py:591: in importAsFile
+    MongoDBController().importAsFile(data, collection, db)
+cloudmesh\mongo\MongoDBController.py:995: in importAsFile
+    result = Shell.run2(cmd)
+cloudmesh\common3\Shell.py:60: in run2
+    shell=True)
+C:\Python37\lib\subprocess.py:395: in check_output
+    **kwargs).stdout
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = ('mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\\Users\\wangc\\.cloudmesh\\tmp\\tmp_import_file.json',)
+kwargs = {'shell': True, 'stderr': -2, 'stdout': -1}
+process = <subprocess.Popen object at 0x000001AD0E53CB08>
+stdout = b"'mongoimport' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired:
+                process.kill()
+                stdout, stderr = process.communicate()
+                raise TimeoutExpired(process.args, timeout, output=stdout,
+                                     stderr=stderr)
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+                raise CalledProcessError(retcode, process.args,
+>                                        output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command 'mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\Users\wangc\.cloudmesh\tmp\tmp_import_file.json' returned non-zero exit status 1.
+
+C:\Python37\lib\subprocess.py:487: CalledProcessError
+____________________ Test_Image.test_provider_image_update ____________________
+
+self = <test_05_image.Test_Image object at 0x000001AD0E2A8888>
+
+    def test_provider_image_update(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.images()
+
+tests\cloud\test_05_image.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:86: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:151: in images
+    return self.p.images(*args, **kwargs)
+cloudmesh\compute\aws\Provider.py:1274: in images
+    self.get_images_and_import(data)
+cloudmesh\mongo\DataBaseDecorator.py:127: in wrapper
+    result = self.database.importAsFile(data,collection,db)
+cloudmesh\mongo\CmDatabase.py:591: in importAsFile
+    MongoDBController().importAsFile(data, collection, db)
+cloudmesh\mongo\MongoDBController.py:995: in importAsFile
+    result = Shell.run2(cmd)
+cloudmesh\common3\Shell.py:60: in run2
+    shell=True)
+C:\Python37\lib\subprocess.py:395: in check_output
+    **kwargs).stdout
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = ('mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\\Users\\wangc\\.cloudmesh\\tmp\\tmp_import_file.json',)
+kwargs = {'shell': True, 'stderr': -2, 'stdout': -1}
+process = <subprocess.Popen object at 0x000001ACE4337E48>
+stdout = b"'mongoimport' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired:
+                process.kill()
+                stdout, stderr = process.communicate()
+                raise TimeoutExpired(process.args, timeout, output=stdout,
+                                     stderr=stderr)
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+                raise CalledProcessError(retcode, process.args,
+>                                        output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command 'mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\Users\wangc\.cloudmesh\tmp\tmp_import_file.json' returned non-zero exit status 1.
+
+C:\Python37\lib\subprocess.py:487: CalledProcessError
+__________________ Test_provider_vm.test_provider_vm_create ___________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE40581C8>
+
+    def test_provider_vm_create(self):
+        HEADING()
+        name_generator.incr()
+        Benchmark.Start()
+>       data = provider.create(key=key)
+
+tests\cloud\test_08_vm_provider.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:86: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:217: in create
+    created = self.loop(self._create, **arguments)
+cloudmesh\compute\vm\Provider.py:114: in loop
+    vm = func(**parameters)
+cloudmesh\compute\vm\Provider.py:252: in _create
+    data = self.p.create(**arguments)
+cloudmesh\compute\aws\Provider.py:1076: in create
+    'Tags': metadata }]
+..\..\lib\site-packages\boto3\resources\factory.py:520: in do_action
+    response = action(self, *args, **kwargs)
+..\..\lib\site-packages\boto3\resources\action.py:83: in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+..\..\lib\site-packages\botocore\client.py:357: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <botocore.client.EC2 object at 0x000001ACB37B2C48>
+operation_name = 'RunInstances'
+api_params = {'ImageId': 'ami-00dc79254d0461090', 'InstanceType': 't2.micro', 'KeyName': 'wang542-key', 'MaxCount': 1, ...}
+
+    def _make_api_call(self, operation_name, api_params):
+        operation_model = self._service_model.operation_model(operation_name)
+        service_name = self._service_model.service_name
+        history_recorder.record('API_CALL', {
+            'service': service_name,
+            'operation': operation_name,
+            'params': api_params,
+        })
+        if operation_model.deprecated:
+            logger.debug('Warning: %s.%s() is deprecated',
+                         service_name, operation_name)
+        request_context = {
+            'client_region': self.meta.region_name,
+            'client_config': self.meta.config,
+            'has_streaming_input': operation_model.has_streaming_input,
+            'auth_type': operation_model.auth_type,
+        }
+        request_dict = self._convert_to_request_dict(
+            api_params, operation_model, context=request_context)
+    
+        service_id = self._service_model.service_id.hyphenize()
+        handler, event_response = self.meta.events.emit_until_response(
+            'before-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            model=operation_model, params=request_dict,
+            request_signer=self._request_signer, context=request_context)
+    
+        if event_response is not None:
+            http, parsed_response = event_response
+        else:
+            http, parsed_response = self._make_request(
+                operation_model, request_dict, request_context)
+    
+        self.meta.events.emit(
+            'after-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            http_response=http, parsed=parsed_response,
+            model=operation_model, context=request_context
+        )
+    
+        if http.status_code >= 300:
+            error_code = parsed_response.get("Error", {}).get("Code")
+            error_class = self.exceptions.from_code(error_code)
+>           raise error_class(parsed_response, operation_name)
+E           botocore.exceptions.ClientError: An error occurred (InvalidKeyPair.NotFound) when calling the RunInstances operation: The key pair 'wang542-key' does not exist
+
+..\..\lib\site-packages\botocore\client.py:661: ClientError
+______________ Test_provider_vm.test_provider_vmprovider_vm_list ______________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE4185CC8>
+
+    def test_provider_vmprovider_vm_list(self):
+        # list should be after create() since it would return empty and
+        # len(data) would be 0
+        HEADING()
+        Benchmark.Start()
+        data = provider.list()
+>       assert len(data) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\cloud\test_08_vm_provider.py:75: AssertionError
+___________________ Test_provider_vm.test_provider_vm_wait ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE42D3F88>
+
+    def test_provider_vm_wait(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       assert provider.wait(vm=vm), "cms wait timed out ..."
+E       AssertionError: cms wait timed out ...
+E       assert False
+E        +  where False = <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>>(vm={'_id': ObjectId('5de598376b6c66dc67fcf815'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-02 23:03:19.096409', 'group': 'cloudmesh', ...}, 'name': 'test-wang542-vm-4'})
+E        +    where <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>> = <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>.wait
+
+tests\cloud\test_08_vm_provider.py:85: AssertionError
+____________________ Test_provider_vm.test_provider_vm_ssh ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE4167988>
+
+    def test_provider_vm_ssh(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       data = provider.ssh(vm=vm, command='\"echo IAmAlive\"')
+
+tests\cloud\test_08_vm_provider.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\compute\vm\Provider.py:447: in ssh
+    return self.p.ssh(vm=vm, command=command)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.aws.Provider.Provider object at 0x000001ACB21D6908>
+vm = {'_id': ObjectId('5de598376b6c66dc67fcf815'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-02 23:03:19.096409', 'group': 'cloudmesh', ...}, 'name': 'test-wang542-vm-4'}
+command = '"echo IAmAlive"'
+
+    def ssh(self, vm=None, command=None):
+    
+        def key_selector(keys):
+            '''
+           This is a helper method for ssh key selection
+           THIS IS JUST A SAFETY MEASURE, PLEASE DON'T MIND IT
+            :param keys:
+            :return:
+            '''
+            tmp_keys = keys[:]
+            # indices = range(1,len(tmp_keys)+1)
+            for key_idx, key in enumerate(keys):
+                key['idx'] = key_idx + 1;
+            print(Printer.flatwrite(tmp_keys,
+                                    sort_keys=["idx"],
+                                    order=['idx', 'KeyName', 'KeyFingerprint'],
+                                    header=['Index', 'Key Name', "Key Fingerprint"],
+                                    output="table",
+                                    humanize=None)
+                  )
+            # Console.msg("Please select one of the AWS key indices from the table above: ")
+            picked = 0
+            while picked < 1 or picked > len(keys):
+                try:
+                    picked = int(input("Please select one of the AWS key indices from the table above: "))
+                except ValueError:
+                    pass
+            return keys[picked - 1]
+    
+        cm = CmDatabase()
+>       ip = vm['public_ips']
+E       KeyError: 'public_ips'
+
+cloudmesh\compute\aws\Provider.py:621: KeyError
+_______________________ Test_provider_vm.test_vm_status _______________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE40BA9C8>
+
+    def test_vm_status(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+>       data = provider.status(name=name)
+
+tests\cloud\test_08_vm_provider.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>
+name = 'test-wang542-vm-4'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh\compute\vm\Provider.py:315: KeyError
+___________________ Test_provider_vm.test_provider_vm_stop ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE3FF2348>
+
+    def test_provider_vm_stop(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.stop(name=name)
+        Benchmark.Stop()
+        stop_timeout = 360
+        time = 0
+        while time <= stop_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests\cloud\test_08_vm_provider.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>
+name = 'test-wang542-vm-4'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh\compute\vm\Provider.py:315: KeyError
+___________________ Test_provider_vm.test_provider_vm_start ___________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE4156108>
+
+    def test_provider_vm_start(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.start(name=name)
+        Benchmark.Stop()
+        start_timeout = 360
+        time = 0
+        while time <= start_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests\cloud\test_08_vm_provider.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x000001ACB0854688>
+name = 'test-wang542-vm-4'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh\compute\vm\Provider.py:315: KeyError
+_________________ Test_provider_vm.test_provider_vm_terminate _________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000001ACE4006548>
+
+    def test_provider_vm_terminate(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.destroy(name=name)
+        Benchmark.Stop()
+    
+        pprint(data)
+    
+        termination_timeout = 360
+        time = 0
+        while time <= termination_timeout:
+            sleep(5)
+            time += 5
+            if cloud == 'chameleon' and len(provider.info(name=name)) == 0:
+                break
+            elif cloud == 'aws' and (len(provider.info(name=name)) == 0 or
+>                                    provider.info(name=name)[0]["cm"][
+                                         "status"] in ['TERMINATED']):
+E                                        KeyError: 'cm'
+
+tests\cloud\test_08_vm_provider.py:180: KeyError
+____________________ Test_cm_find.test_cm_image_name_cloud ____________________
+
+self = <test_09_cm_names_find.Test_cm_find object at 0x000001ACE422BFC8>
+
+    def test_cm_image_name_cloud(self):
+        HEADING()
+        Benchmark.Start()
+        names = cm.names(cloud=cloud, kind="image")
+        Benchmark.Stop()
+        kind = "image"
+        if benchmark_print:
+            pprint(names)
+        else:
+            print(f"Number of entries [{kind}", len(names))
+>       assert len(names) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\cloud\test_09_cm_names_find.py:84: AssertionError
+_________________ Test_cm_find.test_cm_find_ubuntu_in_images __________________
+
+self = <test_09_cm_names_find.Test_cm_find object at 0x000001ACE4235388>
+
+    def test_cm_find_ubuntu_in_images(self):
+        HEADING()
+        print()
+        query = {"name": {'$regex': ".*Ubuntu.*"}}
+        print(query)
+    
+        Benchmark.Start()
+        entries = cm.find(collection=f"{cloud}-image", query=query)
+        Benchmark.Stop()
+    
+        kind = "image"
+        if benchmark_print:
+            print(entries)
+            for entry in entries:
+                print(entry['name'])
+        else:
+            print(f"Number of entries [{kind}", len(entries))
+    
+>       assert len(entries) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\cloud\test_09_cm_names_find.py:149: AssertionError
+============ 12 failed, 54 passed, 5 skipped in 1756.78s (0:29:16) ============

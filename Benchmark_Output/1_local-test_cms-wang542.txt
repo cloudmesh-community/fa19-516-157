@@ -1,0 +1,342 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 4 items
+
+tests/1_local/test_cms.py::TestConfig::test_help 
+[35m
+# ######################################################################
+# test_help \tests\1_local\test_cms.py 17
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 23:test_help .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\r\n'
+#  '========================================\r\n'
+#  'EOF       container  help       man       register  ssh        '
+#  'vbox          \r\n'
+#  'admin     data       image      open      sec       start      '
+#  'vcluster      \r\n'
+#  'banner    debug      info       pause     service   stop       '
+#  'vdir          \r\n'
+#  'chenxu    default    init       plugin    set       stopwatch  '
+#  'version       \r\n'
+#  'clear     echo       inventory  provider  shell     storage    '
+#  'vm            \r\n'
+#  'commands  flavor     ip         q         sleep     sys        '
+#  'workflow_draft\r\n'
+#  'config    group      key        quit      source    var')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestConfig::test_vm 
+[35m
+# ######################################################################
+# test_vm \tests\1_local\test_cms.py 28
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 33:test_vm .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Command vm\r\n'
+#  '==========\r\n'
+#  '\r\n'
+#  '::\r\n'
+#  '\r\n'
+#  '    Usage:\r\n'
+#  '        vm ping [NAMES] [--cloud=CLOUDS] [--count=N]\r\n'
+#  '        vm check [NAMES] [--cloud=CLOUDS] [--username=USERNAME]\r\n'
+#  '        vm status [NAMES] [--cloud=CLOUDS] [--output=OUTPUT]\r\n'
+#  '        vm console [NAME] [--force]\r\n'
+#  '        vm log [NAME] [--force]\r\n'
+#  '        vm stop [NAMES]  [--dryrun]\r\n'
+#  '        vm start [NAMES] [--dryrun]\r\n'
+#  '        vm terminate [NAMES] [--cloud=CLOUD] [--dryrun]\r\n'
+#  '        vm delete [NAMES] [--cloud=CLOUD] [--dryrun]\r\n'
+#  '        vm refresh [--cloud=CLOUDS]\r\n'
+#  '        vm list [NAMES]\r\n'
+#  '                [--cloud=CLOUDS]\r\n'
+#  '                [--output=OUTPUT]\r\n'
+#  '                [--refresh]\r\n'
+#  '        vm boot [--n=COUNT]\r\n'
+#  '                [--name=VMNAMES]\r\n'
+#  '                [--cloud=CLOUD]\r\n'
+#  '                [--username=USERNAME]\r\n'
+#  '                [--image=IMAGE]\r\n'
+#  '                [--flavor=FLAVOR]\r\n'
+#  '                [--public]\r\n'
+#  '                [--secgroup=SECGROUPs]\r\n'
+#  '                [--group=GROUPs]\r\n'
+#  '                [--key=KEY]\r\n'
+#  '                [--dryrun]\r\n'
+#  '                [-v]\r\n'
+#  '        vm meta list [NAME]\r\n'
+#  '        vm meta set [NAME] KEY=VALUE...\r\n'
+#  '        vm meta delete [NAME] KEY...\r\n'
+#  '        vm script [--name=NAMES]\r\n'
+#  '                  [--username=USERNAME]\r\n'
+#  '                  [--key=KEY]\r\n'
+#  '                  [--dryrun]\r\n'
+#  '                  [--dir=DESTINATION]\r\n'
+#  '                  SCRIPT\r\n'
+#  '        vm ip assign [NAMES]\r\n'
+#  '                  [--cloud=CLOUD]\r\n'
+#  '        vm ip show [NAMES]\r\n'
+#  '                   [--group=GROUP]\r\n'
+#  '                   [--cloud=CLOUD]\r\n'
+#  '                   [--output=OUTPUT]\r\n'
+#  '                   [--refresh]\r\n'
+#  '        vm ip inventory [NAMES]\r\n'
+#  '        vm ssh [NAMES]\r\n'
+#  '               [--username=USER]\r\n'
+#  '               [--quiet]\r\n'
+#  '               [--ip=IP]\r\n'
+#  '               [--key=KEY]\r\n'
+#  '               [--command=COMMAND]\r\n'
+#  '        vm put SOURCE DESTINATION [NAMES]\r\n'
+#  '        vm get SOURCE DESTINATION [NAMES]\r\n'
+#  '        vm rename [OLDNAMES] [NEWNAMES] [--force] [--dryrun]\r\n'
+#  '        vm wait [--cloud=CLOUD] [--interval=INTERVAL] [--timeout=TIMEOUT]\r\n'
+#  '        vm info [--cloud=CLOUD]\r\n'
+#  '                [--output=OUTPUT]\r\n'
+#  '        vm username USERNAME [NAMES] [--cloud=CLOUD]\r\n'
+#  '        vm resize [NAMES] [--size=SIZE]\r\n'
+#  '\r\n'
+#  '    Arguments:\r\n'
+#  '        OUTPUT         the output format\r\n'
+#  '        COMMAND        positional arguments, the commands you want to\r\n'
+#  '                       execute on the server(e.g. ls -a) separated by '
+#  "';',\r\n"
+#  '                       you will get a return of executing result instead of '
+#  'login to\r\n'
+#  '                       the server, note that type in -- is suggested '
+#  'before\r\n'
+#  '                       you input the commands\r\n'
+#  '        NAME           server name. By default it is set to the name of last '
+#  'vm from database.\r\n'
+#  '        NAMES          server name. By default it is set to the name of last '
+#  'vm from database.\r\n'
+#  '        KEYPAIR_NAME   Name of the vm keypair to be used to create VM. Note '
+#  'this is\r\n'
+#  '                       not a path to key.\r\n'
+#  '        NEWNAMES       New names of the VM while renaming.\r\n'
+#  '        OLDNAMES       Old names of the VM while renaming.\r\n'
+#  '\r\n'
+#  '    Options:\r\n'
+#  '        -v             verbose, prints the dict at the end\r\n'
+#  '        --output=OUTPUT   the output format\r\n'
+#  '        -H --modify-knownhosts  Do not modify ~/.ssh/known_hosts file\r\n'
+#  "                              when ssh'ing into a machine\r\n"
+#  '        --username=USERNAME   the username to login into the vm. If not\r\n'
+#  '                              specified it will be guessed\r\n'
+#  '                              from the image name and the cloud\r\n'
+#  '        --ip=IP          give the public ip of the server\r\n'
+#  '        --cloud=CLOUD    give a cloud to work on, if not given, selected\r\n'
+#  '                         or default cloud will be used\r\n'
+#  '        --count=COUNT    give the number of servers to start\r\n'
+#  '        --detail         for table, a brief version\r\n'
+#  '                         is used as default, use this flag to print\r\n'
+#  '                         detailed table\r\n'
+#  '        --flavor=FLAVOR  give the name or id of the flavor\r\n'
+#  '        --group=GROUP          give the group name of server\r\n'
+#  '        --secgroup=SECGROUP    security group name for the server\r\n'
+#  '        --image=IMAGE    give the name or id of the image\r\n'
+#  '        --key=KEY        specify a key to use, input a string which\r\n'
+#  '                         is the full path to the private key file\r\n'
+#  '        --keypair_name=KEYPAIR_NAME   Name of the vm keypair to\r\n'
+#  '                                      be used to create VM.\r\n'
+#  '                                      Note this is not a path to key.\r\n'
+#  '        --user=USER      give the user name of the server that you want\r\n'
+#  '                         to use to login\r\n'
+#  '        --name=NAME      give the name of the virtual machine\r\n'
+#  "        --force          rename/ delete vms without user's confirmation\r\n"
+#  '        --command=COMMAND\r\n'
+#  '                         specify the commands to be executed\r\n'
+#  '\r\n'
+#  '\r\n'
+#  '    Description:\r\n'
+#  '        commands used to boot, start or delete servers of a cloud\r\n'
+#  '\r\n'
+#  '        vm default [options...]\r\n'
+#  '            Displays default parameters that are set for vm boot either\r\n'
+#  '            on the default cloud or the specified cloud.\r\n'
+#  '\r\n'
+#  '        vm boot [options...]\r\n'
+#  '            Boots servers on a cloud, user may specify flavor, image\r\n'
+#  '            .etc, otherwise default values will be used, see how to set\r\n'
+#  '            default values of a cloud: cloud help\r\n'
+#  '\r\n'
+#  '        vm start [options...]\r\n'
+#  '            Starts a suspended or stopped vm instance.\r\n'
+#  '\r\n'
+#  '        vm stop [options...]\r\n'
+#  '            Stops a vm instance .\r\n'
+#  '\r\n'
+#  '        vm delete [options...]\r\n'
+#  '\r\n'
+#  '            Delete servers of a cloud, user may delete a server by its\r\n'
+#  '            name or id, delete servers of a group or servers of a cloud,\r\n'
+#  '            give prefix and/or range to find servers by their names.\r\n'
+#  '            Or user may specify more options to narrow the search\r\n'
+#  '\r\n'
+#  '        vm floating_ip_assign [options...]\r\n'
+#  '            assign a public ip to a VM of a cloud\r\n'
+#  '\r\n'
+#  '        vm ip show [options...]\r\n'
+#  '            show the ips of VMs\r\n'
+#  '\r\n'
+#  '        vm ssh [options...]\r\n'
+#  '            login to a server or execute commands on it\r\n'
+#  '\r\n'
+#  '        vm list [options...]\r\n'
+#  '            same as command "list vm", please refer to it\r\n'
+#  '\r\n'
+#  '        vm status [options...]\r\n'
+#  '            Retrieves status of last VM booted on cloud and displays it.\r\n'
+#  '\r\n'
+#  '        vm refresh [--cloud=CLOUDS]\r\n'
+#  '            this command refreshes the data for virtual machines,\r\n'
+#  '            images and flavors for the specified clouds.\r\n'
+#  '\r\n'
+#  '        vm ping [NAMES] [--cloud=CLOUDS] [--count=N] '
+#  '[--processors=PROCESSORS]\r\n'
+#  '             pings the specified virtual machines, while using at most N '
+#  'pings.\r\n'
+#  '             The ping is executed in parallel.\r\n'
+#  '             If names are specifies the ping is restricted to the given '
+#  'names in\r\n'
+#  '             parameter format. If clouds are specified, names that are not '
+#  'in\r\n'
+#  '             these clouds are ignored. If the name is set in the '
+#  'variables\r\n'
+#  '             this name is used.\r\n'
+#  '\r\n'
+#  '        cms vm ssh --command="uname -a"\r\n'
+#  '\r\n'
+#  '              executes the uname command on the last booted vm\r\n'
+#  '\r\n'
+#  '        vm script [--name=NAMES]\r\n'
+#  '                  [--username=USERNAME]\r\n'
+#  '                  [--key=KEY]\r\n'
+#  '                  [--dryrun]\r\n'
+#  '                  [--dir=DESTINATION]\r\n'
+#  '                  [--shell=SHELL]\r\n'
+#  '                  SCRIPT\r\n'
+#  '\r\n'
+#  '           The script command copies a shell script to the specified vms\r\n'
+#  '           into the DESTINATION directory and than execute it. With\r\n'
+#  '           SHELL you can set the shell for executing the command,\r\n'
+#  '           this coudl even be a python interpreter. Examples for\r\n'
+#  '           SHELL are /bin/sh, /usr/bin/env python\r\n'
+#  '\r\n'
+#  '        vm put SOURCE DESTINATION [NAMES]\r\n'
+#  '\r\n'
+#  '            puts the file defined by SOURCE into the DESINATION folder\r\n'
+#  '            on the specified machines. If the file exists it is\r\n'
+#  '            overwritten, so be careful.\r\n'
+#  '\r\n'
+#  '        vm get SOURCE DESTINATION [NAMES]\r\n'
+#  '\r\n'
+#  '            gets  the file defined by SOURCE into the DESINATION folder\r\n'
+#  '            on the specified machines. The SOURCE is on the remote\r\n'
+#  '            machine. If one machine is specified, the SOURCE is the same\r\n'
+#  '            name as on the remote machine. If multiple machines are\r\n'
+#  '            specified, the name of the machine will be a prefix to the\r\n'
+#  '            filename. If the filenames exists, they will be overwritten,\r\n'
+#  '            so be careful.\r\n'
+#  '\r\n'
+#  '    Tip:\r\n'
+#  '        give the VM name, but in a hostlist style, which is very\r\n'
+#  '        convenient when you need a range of VMs e.g. sample[1-3]\r\n'
+#  "        => ['sample1', 'sample2', 'sample3']\r\n"
+#  "        sample[1-3,18] => ['sample1', 'sample2', 'sample3', 'sample18']\r\n"
+#  '\r\n'
+#  '    Quoting commands:\r\n'
+#  '        cm vm login gregor-004 --command="uname -a"\r\n'
+#  '\r\n'
+#  '    Limitations:\r\n'
+#  '\r\n'
+#  '        Azure: rename is not supported')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestConfig::test_help_again 
+[35m
+# ######################################################################
+# test_help_again \tests\1_local\test_cms.py 37
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 43:test_help_again .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\r\n'
+#  '========================================\r\n'
+#  'EOF       container  help       man       register  ssh        '
+#  'vbox          \r\n'
+#  'admin     data       image      open      sec       start      '
+#  'vcluster      \r\n'
+#  'banner    debug      info       pause     service   stop       '
+#  'vdir          \r\n'
+#  'chenxu    default    init       plugin    set       stopwatch  '
+#  'version       \r\n'
+#  'clear     echo       inventory  provider  shell     storage    '
+#  'vm            \r\n'
+#  'commands  flavor     ip         q         sleep     sys        '
+#  'workflow_draft\r\n'
+#  'config    group      key        quit      source    var')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestConfig::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 5.9 GiB                                                                           |
+| mem_free          | 5.9 GiB                                                                           |
+| mem_percent       | 62.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 10.0 GiB                                                                          |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                    | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help       | 2.624 | 2019-12-02 22:02:40 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm         | 2.664 | 2019-12-02 22:02:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again | 2.565 | 2019-12-02 22:02:45 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop     | 0.0   | 2019-12-02 22:02:48 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,2.624,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,2.664,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,2.565,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+============================== 4 passed in 8.54s ==============================

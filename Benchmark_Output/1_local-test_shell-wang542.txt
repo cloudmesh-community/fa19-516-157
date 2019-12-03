@@ -1,0 +1,146 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 7 items
+
+tests/1_local/test_shell.py::TestName::test_shell UNDEFINED_TERMINAL_TYPE
+PASSED
+tests/1_local/test_shell.py::TestName::test_pwd [31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 819, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_list [31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 819, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_string [31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 819, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_wrapper [31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 819, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_wrapper_multi_options [31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 819, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 6.1 GiB                                                                           |
+| mem_free          | 6.1 GiB                                                                           |
+| mem_percent       | 61.7%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 9.8 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                       | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_shell/test_shell                       | 0.004 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_pwd                         | 0.121 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_list                  | 0.005 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_string                | 0.005 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_wrapper               | 0.004 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_wrapper_multi_options | 0.005 | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                        | 0.0   | 2019-12-02 22:07:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_shell/test_shell,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_pwd,0.121,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_list,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_string,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_wrapper,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_wrapper_multi_options,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+============================== 7 passed in 0.87s ==============================

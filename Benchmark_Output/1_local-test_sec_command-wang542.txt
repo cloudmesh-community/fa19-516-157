@@ -1,0 +1,429 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 10 items
+
+tests/1_local/test_sec_command.py::TestSecCLI::test_clear 
+[35m
+# ######################################################################
+# test_clear \tests\1_local\test_sec_command.py 45
+# ######################################################################
+[0m
+clear cms sec clear
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_load load cms sec load
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_add 
+[35m
+# ######################################################################
+# test_rule_add \tests\1_local\test_sec_command.py 73
+# ######################################################################
+[0m
+rule add cms sec rule add deleteme FROMPORT TOPORT PROTOCOL CIDR
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_delete 
+[35m
+# ######################################################################
+# test_rule_delete \tests\1_local\test_sec_command.py 86
+# ######################################################################
+[0m
+rule delete cms sec rule delete deleteme
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_add 
+[35m
+# ######################################################################
+# test_group_add \tests\1_local\test_sec_command.py 97
+# ######################################################################
+[0m
+group add cms sec group add deleteme empty empty
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_delete 
+[35m
+# ######################################################################
+# test_group_delete \tests\1_local\test_sec_command.py 109
+# ######################################################################
+[0m
+group delete cms sec group delete deleteme
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_list 
+[35m
+# ######################################################################
+# test_rule_list \tests\1_local\test_sec_command.py 120
+# ######################################################################
+[0m
+rule list cms sec rule list
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_list 
+[35m
+# ######################################################################
+# test_list \tests\1_local\test_sec_command.py 137
+# ######################################################################
+[0m
+list cms sec list
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_list 
+[35m
+# ######################################################################
+# test_group_list \tests\1_local\test_sec_command.py 150
+# ######################################################################
+[0m
+list cms sec group list
+
+Usage:
+
+    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec rule add RULE FROMPORT TOPORT PROTOCOL CIDR
+    sec rule delete RULE [--cloud=CLOUD]
+    sec group list [--cloud=CLOUDS] [--output=OUTPUT]
+    sec group add GROUP RULES DESCRIPTION
+    sec group delete GROUP [--cloud=CLOUD]
+    sec group load [GROUP] [--cloud=CLOUD]
+    sec list [--output=OUTPUT]
+    sec load
+    sec clear
+
+ERROR: Could not execute the command. Please check usage with
+
+    cms help sec
+
+
+FAILED
+tests/1_local/test_sec_command.py::TestSecCLI::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 5.8 GiB                                                                           |
+| mem_free          | 5.8 GiB                                                                           |
+| mem_percent       | 63.3%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 10.1 GiB                                                                          |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                              | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_sec_command/test_clear        | 2.616 | 2019-12-02 22:05:10 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local clear                        | 2.613 | 2019-12-02 22:05:10 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_load         | 2.541 | 2019-12-02 22:05:14 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local load                         | 2.538 | 2019-12-02 22:05:14 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_add     | 2.541 | 2019-12-02 22:05:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule add                     | 2.537 | 2019-12-02 22:05:17 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_delete  | 2.641 | 2019-12-02 22:05:20 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule delete                  | 2.638 | 2019-12-02 22:05:20 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_add    | 2.551 | 2019-12-02 22:05:23 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group add                    | 2.548 | 2019-12-02 22:05:23 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_delete | 2.709 | 2019-12-02 22:05:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group delete                 | 2.706 | 2019-12-02 22:05:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_list    | 2.92  | 2019-12-02 22:05:29 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule list                    | 2.916 | 2019-12-02 22:05:29 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_list         | 2.584 | 2019-12-02 22:05:32 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local list                         | 2.721 | 2019-12-02 22:05:35 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_list   | 2.725 | 2019-12-02 22:05:35 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop               | 0.0   | 2019-12-02 22:05:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_sec_command/test_clear,2.616,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local clear,2.613,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_load,2.541,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local load,2.538,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_add,2.541,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule add,2.537,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_delete,2.641,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule delete,2.638,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_add,2.551,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group add,2.548,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_delete,2.709,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group delete,2.706,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_list,2.92,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule list,2.916,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_list,2.584,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local list,2.721,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_list,2.725,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+____________________________ TestSecCLI.test_clear ____________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A7363188>
+
+    def test_clear(self):
+        HEADING(color="HEADER")
+    
+        Benchmark.Start()
+        run("clear", "cms sec clear")
+        Benchmark.Stop()
+    
+        r = rules.list()
+        g = groups.list()
+    
+>       assert len(r) == 0
+E       assert 5 == 0
+E         -5
+E         +0
+
+tests\1_local\test_sec_command.py:55: AssertionError
+__________________________ TestSecCLI.test_rule_add ___________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A73E1188>
+
+    def test_rule_add(self):
+        HEADING()
+    
+        Benchmark.Start()
+        result = run("rule add",
+                     f"cms sec rule add deleteme FROMPORT TOPORT PROTOCOL CIDR")
+        Benchmark.Stop()
+    
+        entry = rules.list(name="deleteme")
+    
+>       assert len(entry) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\1_local\test_sec_command.py:83: AssertionError
+__________________________ TestSecCLI.test_group_add __________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A735D648>
+
+    def test_group_add(self):
+        HEADING()
+    
+        Benchmark.Start()
+        result = run("group add", f"cms sec group add deleteme empty empty")
+        Benchmark.Stop()
+    
+        entry = groups.list(name="deleteme")
+    
+>       assert len(entry) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\1_local\test_sec_command.py:106: AssertionError
+__________________________ TestSecCLI.test_rule_list __________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A7353408>
+
+    def test_rule_list(self):
+        HEADING()
+    
+        Benchmark.Start()
+        result = run("rule list", "cms sec rule list")
+        Benchmark.Stop()
+    
+        r = rules.list()
+        g = groups.list()
+    
+        for entry in r:
+            name = entry['name']
+>           assert name in result
+E           AssertionError: assert 'ssh' in '\r\nUsage:\r\n\r\n    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]\r\n    sec rule add RULE FROMPORT TOPORT PROTO...\r\n    sec clear\r\n\r\nERROR: Could not execute the command. Please check usage with\r\n\r\n    cms help sec\r\n\r\n'
+
+tests\1_local\test_sec_command.py:132: AssertionError
+____________________________ TestSecCLI.test_list _____________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A73BFB08>
+
+    def test_list(self):
+        HEADING()
+    
+        Benchmark.Start()
+        result = run("list", "cms sec list")
+        Benchmark.Stop()
+    
+        g = groups.list()
+    
+        for entry in g:
+            name = entry['name']
+>           assert name in result
+E           AssertionError: assert 'default' in '\r\nUsage:\r\n\r\n    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]\r\n    sec rule add RULE FROMPORT TOPORT PROTO...\r\n    sec clear\r\n\r\nERROR: Could not execute the command. Please check usage with\r\n\r\n    cms help sec\r\n\r\n'
+
+tests\1_local\test_sec_command.py:148: AssertionError
+_________________________ TestSecCLI.test_group_list __________________________
+
+self = <test_sec_command.TestSecCLI object at 0x00000146A73DB448>
+
+    def test_group_list(self):
+        HEADING()
+    
+        Benchmark.Start()
+        result = run("list", "cms sec group list")
+        Benchmark.Stop()
+    
+        g = groups.list()
+    
+        for entry in g:
+            name = entry['name']
+>           assert name in result
+E           AssertionError: assert 'default' in '\r\nUsage:\r\n\r\n    sec rule list [--cloud=CLOUDS] [--output=OUTPUT]\r\n    sec rule add RULE FROMPORT TOPORT PROTO...\r\n    sec clear\r\n\r\nERROR: Could not execute the command. Please check usage with\r\n\r\n    cms help sec\r\n\r\n'
+
+tests\1_local\test_sec_command.py:161: AssertionError
+======================== 6 failed, 4 passed in 28.46s =========================

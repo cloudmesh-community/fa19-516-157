@@ -1,0 +1,1028 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 9 items
+
+tests/1_local/test_config.py::TestConfig::test_config 
+1 True 0 0 0
+2 True 0 0 0
+3 True 0 0 0
+4 True 0 0 0
+5 True 0 0 0
+6 True 0 0 0
+7 True 0 0 0
+8 True 0 0 0
+9 True 0 0 0
+PASSED
+tests/1_local/test_config.py::TestConfig::test_search ['cloudmesh.cloud.docker.cm.active',
+ 'cloudmesh.cloud.azure.cm.active',
+ 'cloudmesh.cloud.azurearm.cm.active',
+ 'cloudmesh.cloud.azureaz.cm.active',
+ 'cloudmesh.cloud.awslibcloud.cm.active',
+ 'cloudmesh.cloud.aws.cm.active',
+ 'cloudmesh.cloud.google.cm.active',
+ 'cloudmesh.cloud.chameleon.cm.active',
+ 'cloudmesh.cloud.jetstream.cm.active',
+ 'cloudmesh.cloud.cybera-e.cm.active',
+ 'cloudmesh.cloud.vagrant.cm.active',
+ 'cloudmesh.cloud.vagrant_remote.cm.active']
+PASSED
+tests/1_local/test_config.py::TestConfig::test_dict 
+[35m
+# ######################################################################
+# test_dict \tests\1_local\test_config.py 52
+# ######################################################################
+[0m
+{'cloudmesh': {'cloud': {'aws': {'cm': {'active': False,
+                                        'heading': 'AWS',
+                                        'host': 'aws.amazon.com',
+                                        'kind': 'aws',
+                                        'label': 'aws',
+                                        'service': 'compute',
+                                        'version': 'wang542'},
+                                 'credentials': {'EC2_ACCESS_ID': 'AKIA2FX5UQVNKL6DOEZM',
+                                                 'EC2_PRIVATE_KEY_FILE_NAME': 'id_rsa',
+                                                 'EC2_PRIVATE_KEY_FILE_PATH': '~/.ssh/id_rsa',
+                                                 'EC2_SECRET_KEY': 'c0BVhhR+prvfrDn6crjn8mOiR7oAwb+VU5BEF428',
+                                                 'EC2_SECURITY_GROUP': 'group1',
+                                                 'region': 'us-east-1'},
+                                 'default': {'image': 'ami-00dc79254d0461090',
+                                             'size': 't2.micro'}},
+                         'awslibcloud': {'cm': {'active': False,
+                                                'heading': 'AWS',
+                                                'host': 'aws.amazon.com',
+                                                'kind': 'awslibcloud',
+                                                'label': 'aws',
+                                                'service': 'compute',
+                                                'version': 'TBD'},
+                                         'credentials': {'EC2_ACCESS_ID': 'TBD',
+                                                         'EC2_PRIVATE_KEY_FILE_NAME': 'aws_cert',
+                                                         'EC2_PRIVATE_KEY_FILE_PATH': '~/.cloudmesh/aws_cert.pem',
+                                                         'EC2_SECRET_KEY': 'TBD',
+                                                         'EC2_SECURITY_GROUP': 'group1',
+                                                         'region': 'us-west-2'},
+                                         'default': {'image': 'ami-0f65671a86f061fcd',
+                                                     'size': 't2.micro'}},
+                         'azure': {'cm': {'active': True,
+                                          'heading': 'Azure',
+                                          'host': 'azure.microsoft.com',
+                                          'kind': 'azure',
+                                          'label': 'Azure',
+                                          'service': 'compute',
+                                          'version': 'latest'},
+                                   'credentials': {'AZURE_APPLICATION_ID': 'e1409c33-f364-4cd9-9981-fbd270058389',
+                                                   'AZURE_REGION': 'eastus',
+                                                   'AZURE_SECRET_KEY': ':ydi7/pc9]XZekc/lkBaBDs55hAPOD:O',
+                                                   'AZURE_SUBSCRIPTION_ID': '1b552345-85f2-4a12-97af-c67f27be817b',
+                                                   'AZURE_TENANT_ID': '1113be34-aed1-4d00-ab4b-cdd02510be91'},
+                                   'default': {'AZURE_PUBLIC_IP_NAME': 'cloudmeshPUBLICIP',
+                                               'AZURE_VM_DISK_NAME': 'cloudmesh-os-disk',
+                                               'AZURE_VM_IP_CONFIG': 'cloudmesh-ip-config',
+                                               'AZURE_VM_NAME': 'cloudmeshVM',
+                                               'AZURE_VM_NIC': 'cloudmesh-nic',
+                                               'AZURE_VM_PASSWORD': 'TBD',
+                                               'AZURE_VM_USER': 'TBD',
+                                               'blob_container': 'vhds',
+                                               'image': 'Canonical:UbuntuServer:16.04.0-LTS:latest',
+                                               'network': 'cmnetwork',
+                                               'resource_group': 'cloudmesh',
+                                               'size': 'Basic_A0',
+                                               'storage_account': 'cmdrive',
+                                               'subnet': 'cmsubnet'}},
+                         'azurearm': {'cm': {'active': False,
+                                             'heading': 'AWS',
+                                             'host': 'azure.mocrosoft.com',
+                                             'kind': 'azure_arm',
+                                             'label': 'azure_arm',
+                                             'service': 'storage',
+                                             'version': 'TBD'},
+                                      'credentials': {'AZURE_APPLICATION_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+                                                      'AZURE_REGION': 'northcentralus',
+                                                      'AZURE_SECRET_KEY': 'TBD',
+                                                      'AZURE_SUBSCRIPTION_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+                                                      'AZURE_TENANT_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'},
+                                      'default': {'blob_container': 'vhds',
+                                                  'image': 'Canonical:UbuntuServer:16.04-LTS:latest',
+                                                  'network': 'cmnetwork',
+                                                  'resource_group': 'cloudmesh',
+                                                  'size': 'Basic_A0',
+                                                  'storage_account': 'cmdrive',
+                                                  'subnet': 'cmsubnet'}},
+                         'azureaz': {'cm': {'active': False,
+                                            'heading': 'AWS',
+                                            'host': 'azure.mocrosoft.com',
+                                            'kind': 'azureaz',
+                                            'label': 'azureaz',
+                                            'service': 'compute',
+                                            'version': 'TBD'},
+                                     'credentials': {'location': 'eastus',
+                                                     'resourcegroup': 'test'},
+                                     'default': {'image': 'Canonical:UbuntuServer:16.04-LTS:latest',
+                                                 'network': 'cmnetwork',
+                                                 'resource_group': 'cloudmesh',
+                                                 'size': 'Basic_A0',
+                                                 'storage_account': 'cmdrive'}},
+                         'chameleon': {'cm': {'active': True,
+                                              'heading': 'Chameleon',
+                                              'host': 'chameleoncloud.org',
+                                              'kind': 'openstack',
+                                              'label': 'chameleon',
+                                              'service': 'compute',
+                                              'version': 'liberty'},
+                                       'credentials': {'OS_AUTH_URL': 'https://openstack.tacc.chameleoncloud.org:5000/v2.0',
+                                                       'OS_KEY_PATH': '~/.ssh/id_rsa.pub',
+                                                       'OS_PASSWORD': '!2Xiaoshanjipeter',
+                                                       'OS_PROJECT_DOMAIN_ID': 'default',
+                                                       'OS_PROJECT_NAME': 'CH-819337',
+                                                       'OS_REGION_NAME': 'RegionOne',
+                                                       'OS_TENANT_ID': 'CH-819337',
+                                                       'OS_TENANT_NAME': 'CH-819337',
+                                                       'OS_USERNAME': 'wang542',
+                                                       'OS_USER_DOMAIN_ID': 'default',
+                                                       'OS_VERSION': 'kilo'},
+                                       'default': {'image': 'CC-Ubuntu18.04',
+                                                   'size': 'm1.medium',
+                                                   'username': 'cc'}},
+                         'cybera-e': {'cm': {'active': False,
+                                             'heading': 'Cybera Edmonton '
+                                                        'OpenStack',
+                                             'host': 'cybera',
+                                             'kind': 'openstack',
+                                             'label': 'kilo',
+                                             'service': 'compute',
+                                             'version': 'kilo'},
+                                      'credentials': {'OS_AUTH_URL': 'https://vm.tacc.chameleoncloud.org:5000/v3',
+                                                      'OS_PASSWORD': 'TBD',
+                                                      'OS_PROJECT_NAME': 'TBD',
+                                                      'OS_REGION_NAME': 'Edmonton',
+                                                      'OS_TENANT_ID': 'TBD',
+                                                      'OS_TENANT_NAME': 'TBD',
+                                                      'OS_USERNAME': 'TBD'},
+                                      'default': {'image': 'Ubuntu 14.04',
+                                                  'size': 'm1.small'}},
+                         'docker': {'cm': {'active': True,
+                                           'heading': 'Docker',
+                                           'host': 'localhost',
+                                           'kind': 'docker',
+                                           'label': 'docker',
+                                           'service': 'compute',
+                                           'version': '18.09.2'},
+                                    'credentials': {'key': '~/.ssh/id_rsa'},
+                                    'default': {'os': 'ubuntu',
+                                                'version': '18.04'}},
+                         'google': {'cm': {'active': True,
+                                           'heading': 'google',
+                                           'host': 'google.cloud.com',
+                                           'kind': 'google',
+                                           'label': 'google',
+                                           'service': 'compute',
+                                           'version': 'TBD'},
+                                    'credentials': {'client_email': '<service '
+                                                                    'account>.iam.gserviceaccount.com',
+                                                    'datacenter': 'us-central1-a',
+                                                    'path_to_json_file': '~/.cloudmesh/<file '
+                                                                         'with '
+                                                                         'credentials>',
+                                                    'project': '<Project '
+                                                               'Name>'},
+                                    'default': {'image': 'Image Name',
+                                                'size': 'n1-standard-4'}},
+                         'jetstream': {'cm': {'active': True,
+                                              'heading': 'Jetstream',
+                                              'host': 'http://jetstream-cloud.org/',
+                                              'kind': 'opensatck',
+                                              'label': 'jetstream',
+                                              'service': 'compute',
+                                              'version': 'kilo'},
+                                       'credentials': {'OS_AUTH_URL': 'https://tacc.jetstream-cloud.org:5000',
+                                                       'OS_IDENTITY_API_VERSION': 3,
+                                                       'OS_INTERFACE': 'public',
+                                                       'OS_PASSWORD': 'TBD',
+                                                       'OS_PROJECT_DOMAIN_NAME': 'tacc',
+                                                       'OS_PROJECT_ID': '7bfa792867a141e6855fdaaa2a960a4e',
+                                                       'OS_PROJECT_NAME': 'TG-CIE170003',
+                                                       'OS_REGION_NAME': 'RegionOne',
+                                                       'OS_TENANT_NAME': 'TG-CIE170003',
+                                                       'OS_USERNAME': 'TBD',
+                                                       'OS_USER_DOMAIN_NAME': 'tacc'},
+                                       'default': {'image': 'Ubuntu-Server-14.04-LTS',
+                                                   'size': 'm1.small'}},
+                         'vagrant': {'cm': {'active': True,
+                                            'heading': 'Vagrant',
+                                            'host': 'TBD',
+                                            'kind': 'TBD',
+                                            'label': 'TBD',
+                                            'service': 'compute',
+                                            'version': 'TBD'},
+                                     'credentials': {'hostname': 'localhost',
+                                                     'local': True},
+                                     'default': {'image': 'ubuntu/bionic/64',
+                                                 'key': '~/.ssh/id_rsa.pub',
+                                                 'path': '~/.cloudmesh/vagrant'}},
+                         'vagrant_remote': {'cm': {'active': False,
+                                                   'heading': 'Vagrant',
+                                                   'host': 'TBD',
+                                                   'kind': 'TBD',
+                                                   'label': 'TBD',
+                                                   'version': 'TBD'},
+                                            'credentials': {'hostname': '127.0.0.1',
+                                                            'key': '~/.ssh/id_rsa.pub',
+                                                            'local': False,
+                                                            'username': 'albert'},
+                                            'default': {'path': '~/.cloudmesh/vagrant'}}},
+               'cluster': {'bigred2': {'active': False,
+                                       'address': 'bigred2.iu.edu',
+                                       'cm': 'missing',
+                                       'credentials': {'pulickey': '~/.ssh/id_rsa.pub',
+                                                       'username': 'TBD'},
+                                       'label': 'bigred',
+                                       'name': 'bigred2'},
+                           'clustera': {'active': False,
+                                        'cm': 'missing',
+                                        'computer_a': {'address': 'localhost',
+                                                       'credentials': {'pulickey': '~/.ssh/id_rsa.pub',
+                                                                       'username': 'TBD'},
+                                                       'label': 'one',
+                                                       'name': 'computer_a'},
+                                        'computer_b': {'address': 'localhost',
+                                                       'cm': 'missing',
+                                                       'credentials': {'pulickey': '~/.ssh/id_rsa.pub',
+                                                                       'username': 'TBD'},
+                                                       'label': 'two',
+                                                       'name': 'computer_b'}},
+                           'karst': {'active': False,
+                                     'cm': 'missing',
+                                     'credentials': {'pulickey': '~/.ssh/id_rsa.pub',
+                                                     'username': 'TBD'}},
+                           'slurm-taito': {'active': False,
+                                           'cm': 'missing',
+                                           'credentials': {'sshconfigpath': '~/.ssh/config'},
+                                           'name': 'taito'},
+                           'vcluster_test1': {'active': False,
+                                              'cm': 'missing',
+                                              'computer_a': {'address': 'localhost',
+                                                             'credentials': {'sshconfigpath': '~/.ssh/config'},
+                                                             'label': 'one',
+                                                             'name': 'machine1'},
+                                              'computer_b': {'address': 'localhost',
+                                                             'credentials': {'pulickey': '~/.ssh/id_rsa.pub',
+                                                                             'username': 'TBD'},
+                                                             'label': 'one',
+                                                             'name': 'computer_a'}},
+                           'vcluster_test2': {'active': False,
+                                              'c2': {'address': 'localhost',
+                                                     'credentials': {'sshconfigpath': '~/.ssh/config'},
+                                                     'label': 'two',
+                                                     'name': 'machine2'},
+                                              'cm': 'missing'}},
+               'comet': {'active': 'production',
+                         'endpoints': {'dev': {'api_version': 'v1',
+                                               'apikey': {'api_key': 'TBD',
+                                                          'api_secret': 'TBD'},
+                                               'auth_provider': 'apikey',
+                                               'nucleus_base_url': 'https://comet-nucleus-dev.sdsc.edu/nucleus',
+                                               'userpass': {'password': 'TBD',
+                                                            'username': 'TBD'}},
+                                       'production': {'api_version': 'v1',
+                                                      'apikey': {'api_key': 'TBD',
+                                                                 'api_secret': 'TBD'},
+                                                      'auth_provider': 'apikey',
+                                                      'nucleus_base_url': 'https://comet-nucleus.sdsc.edu/nucleus',
+                                                      'userpass': {'password': 'TBD',
+                                                                   'username': 'TBD'}}},
+                         'username': 'wang542'},
+               'data': {'bug': {'comment': 'this type is not supported use '
+                                           'storage instead'},
+                        'db': {'local': {'CMDATA_DB_FOLDER': '~/cloudmesh/cloud/test/data/db'}},
+                        'default': {'db': 'local', 'service': 'local'},
+                        'mongo': {'LOCAL': '~/local',
+                                  'MODE': 'native',
+                                  'MONGO_AUTOINSTALL': True,
+                                  'MONGO_BREWINSTALL': False,
+                                  'MONGO_DBNAME': 'cloudmesh',
+                                  'MONGO_DOWNLOAD': {'darwin': {'MONGO_HOME': '~/local/mongo',
+                                                                'MONGO_LOG': '~/.cloudmesh/mongodb/log',
+                                                                'MONGO_PATH': '~/.cloudmesh/mongodb',
+                                                                'url': 'https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.12.tgz'},
+                                                     'docker': {'MONGO_LOG': '~/.cloudmesh/mongodb/log',
+                                                                'MONGO_PATH': '~/.cloudmesh/mongodb',
+                                                                'version': 'latest'},
+                                                     'linux': {'MONGO_HOME': '~/local/mongo',
+                                                               'MONGO_LOG': '~/.cloudmesh/mongodb/log',
+                                                               'MONGO_PATH': '~/.cloudmesh/mongodb',
+                                                               'url': 'https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.10.tgz'},
+                                                     'redhat': {'MONGO_HOME': '~/local/mongo',
+                                                                'MONGO_LOG': '~/.cloudmesh/mongodb/log',
+                                                                'MONGO_PATH': '~/.cloudmesh/mongodb',
+                                                                'url': 'https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/RPMS/mongodb-org-server-4.0.10-1.el7.x86_64.rpm'},
+                                                     'win32': {'MONGO_HOME': '~\\.cloudmesh\\mongo',
+                                                               'MONGO_LOG': '~\\.cloudmesh\\mongodb-data\\log',
+                                                               'MONGO_PATH': '~\\.cloudmesh\\mongodb-data',
+                                                               'url': 'https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.10-signed.msi'}},
+                                  'MONGO_HOST': '127.0.0.1',
+                                  'MONGO_PASSWORD': 'admin123',
+                                  'MONGO_PORT': '27017',
+                                  'MONGO_USERNAME': 'admin'},
+                        'service': {'azure': {'container': 'cmdata',
+                                              'credentials': {'AZURE_STORAGE_ACCOUNT': '',
+                                                              'AZURE_STORAGE_KEY': ''}},
+                                    'google': {'credentials': {'GOOGLE_STORAGE_KEY': '',
+                                                               'GOOGLE_STORAGE_SECRET': ''}},
+                                    'local': {'CMDATA_STORAGE_FOLDER': '~/cloudmesh/cloud/test/data/storage'}}},
+               'default': {'cloud': 'chameleon',
+                           'cluster': 'clustera',
+                           'debug': True,
+                           'experiment': 'base',
+                           'group': 'cloudmesh',
+                           'timer': False,
+                           'trace': True},
+               'iu': {'user': 'wang542'},
+               'profile': {'email': 'wang542@iu.edu',
+                           'firstname': 'chenxu',
+                           'github': 'wang542',
+                           'lastname': 'wang',
+                           'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+                           'user': 'wang542'},
+               'storage': {'aws': {'cm': {'active': False,
+                                          'heading': 'homedir',
+                                          'host': 'aws.com',
+                                          'kind': 'awss3',
+                                          'label': 'home-dir',
+                                          'service': 'storage',
+                                          'version': 'TBD'},
+                                   'credentials': {'access_key_id': 'TBD',
+                                                   'bucket': 'home',
+                                                   'container': 'TBD',
+                                                   'name': 'TBD',
+                                                   'region': 'TBD',
+                                                   'secret_access_key': 'TBD'},
+                                   'default': {'directory': 'TBD'}},
+                           'azure': {'cm': {'active': False,
+                                            'heading': 'AWS',
+                                            'host': 'azure.mocrosoft.com',
+                                            'kind': 'azureblob',
+                                            'label': 'azure_blob',
+                                            'service': 'storage',
+                                            'version': 'TBD'},
+                                     'credentials': {'AZURE_APPLICATION_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+                                                     'AZURE_REGION': 'northcentralus',
+                                                     'AZURE_SECRET_KEY': 'TBD',
+                                                     'AZURE_SUBSCRIPTION_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+                                                     'AZURE_TENANT_ID': 'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+                                                     'account_key': 'TBD',
+                                                     'account_name': 'TBD',
+                                                     'container': 'TBD'},
+                                     'default': {'location': 'TBD',
+                                                 'resource_group': 'cloudmesh'}},
+                           'box': {'cm': {'active': False,
+                                          'heading': 'Box',
+                                          'host': 'box.com',
+                                          'kind': 'box',
+                                          'label': 'box',
+                                          'service': 'storage',
+                                          'version': 'TBD'},
+                                   'credentials': {'config_path': 'TBD'},
+                                   'default': {'directory': '/'}},
+                           'gdrive': {'cm': {'active': False,
+                                             'heading': 'GDrive',
+                                             'host': 'dgrive.google.com',
+                                             'kind': 'gdrive',
+                                             'label': 'gdrive',
+                                             'service': 'storage',
+                                             'version': 'TBD'},
+                                      'credentials': {'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs',
+                                                      'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
+                                                      'client_id': 'TBD',
+                                                      'client_secret': 'TBD',
+                                                      'project_id': 'TBD',
+                                                      'redirect_uris': ['urn:ietf:wg:oauth:2.0:oob',
+                                                                        'http://localhost'],
+                                                      'token_uri': 'TBD'},
+                                      'default': {'directory': 'TBD'}},
+                           'storage_a': {'cm': {'active': False,
+                                                'heading': 'Storage A',
+                                                'host': 'localhost',
+                                                'kind': 'local',
+                                                'label': 'local',
+                                                'service': 'storage',
+                                                'version': 'TBD'},
+                                         'credentials': {'directory': '~/a',
+                                                         'key': '~/.ssh/id_rsa.pub',
+                                                         'name': 'TBD'}},
+                           'storage_b': {'cm': {'active': False,
+                                                'heading': 'Storage B',
+                                                'host': 'localhost',
+                                                'kind': 'local',
+                                                'label': 'local',
+                                                'service': 'storage',
+                                                'version': 'TBD'},
+                                         'credentials': {'directory': '~/b',
+                                                         'key': '~/.ssh/id_rsa.pub',
+                                                         'name': 'TBD'}}},
+               'test': {'nested': 'Gregor'},
+               'version': '4.1.9'}}
+cloudmesh:
+  version: 4.1.9
+  profile:
+    firstname: chenxu
+    lastname: wang
+    email: wang542@iu.edu
+    user: wang542
+    github: wang542
+    publickey: C:\Users\wangc\.ssh\id_rsa.pub
+  iu:
+    user: wang542
+  default:
+    group: cloudmesh
+    experiment: base
+    cloud: chameleon
+    cluster: clustera
+    trace: true
+    debug: true
+    timer: false
+  comet:
+    username: wang542
+    active: production
+    endpoints:
+      dev:
+        nucleus_base_url: https://comet-nucleus-dev.sdsc.edu/nucleus
+        api_version: v1
+        auth_provider: apikey
+        userpass:
+          username: TBD
+          password: TBD
+        apikey:
+          api_key: TBD
+          api_secret: TBD
+      production:
+        nucleus_base_url: https://comet-nucleus.sdsc.edu/nucleus
+        api_version: v1
+        auth_provider: apikey
+        userpass:
+          username: TBD
+          password: TBD
+        apikey:
+          api_key: TBD
+          api_secret: TBD
+  storage:
+    storage_a:
+      cm:
+        active: false
+        heading: Storage A
+        host: localhost
+        label: local
+        kind: local
+        version: TBD
+        service: storage
+      credentials:
+        directory: ~/a
+        name: TBD
+        key: ~/.ssh/id_rsa.pub
+    storage_b:
+      cm:
+        active: false
+        heading: Storage B
+        host: localhost
+        label: local
+        kind: local
+        version: TBD
+        service: storage
+      credentials:
+        directory: ~/b
+        name: TBD
+        key: ~/.ssh/id_rsa.pub
+    box:
+      cm:
+        active: false
+        heading: Box
+        host: box.com
+        label: box
+        kind: box
+        version: TBD
+        service: storage
+      default:
+        directory: /
+      credentials:
+        config_path: TBD
+    aws:
+      cm:
+        active: false
+        heading: homedir
+        host: aws.com
+        label: home-dir
+        kind: awss3
+        version: TBD
+        service: storage
+      default:
+        directory: TBD
+      credentials:
+        name: TBD
+        bucket: home
+        container: TBD
+        access_key_id: TBD
+        secret_access_key: TBD
+        region: TBD
+    gdrive:
+      cm:
+        active: false
+        heading: GDrive
+        host: dgrive.google.com
+        label: gdrive
+        kind: gdrive
+        version: TBD
+        service: storage
+      default:
+        directory: TBD
+      credentials:
+        client_id: TBD
+        project_id: TBD
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        token_uri: TBD
+        client_secret: TBD
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        redirect_uris:
+        - urn:ietf:wg:oauth:2.0:oob
+        - http://localhost
+    azure:
+      cm:
+        active: false
+        heading: AWS
+        host: azure.mocrosoft.com
+        label: azure_blob
+        kind: azureblob
+        version: TBD
+        service: storage
+      default:
+        resource_group: cloudmesh
+        location: TBD
+      credentials:
+        account_name: TBD
+        account_key: TBD
+        container: TBD
+        AZURE_TENANT_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_SUBSCRIPTION_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_APPLICATION_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_SECRET_KEY: TBD
+        AZURE_REGION: northcentralus
+  cloud:
+    docker:
+      cm:
+        active: true
+        heading: Docker
+        host: localhost
+        label: docker
+        kind: docker
+        version: 18.09.2
+        service: compute
+      default:
+        os: ubuntu
+        version: '18.04'
+      credentials:
+        key: ~/.ssh/id_rsa
+    azure:
+      cm:
+        active: true
+        heading: Azure
+        host: azure.microsoft.com
+        label: Azure
+        kind: azure
+        version: latest
+        service: compute
+      default:
+        image: Canonical:UbuntuServer:16.04.0-LTS:latest
+        size: Basic_A0
+        resource_group: cloudmesh
+        storage_account: cmdrive
+        network: cmnetwork
+        subnet: cmsubnet
+        blob_container: vhds
+        AZURE_VM_IP_CONFIG: cloudmesh-ip-config
+        AZURE_VM_NIC: cloudmesh-nic
+        AZURE_VM_DISK_NAME: cloudmesh-os-disk
+        AZURE_PUBLIC_IP_NAME: cloudmeshPUBLICIP
+        AZURE_VM_USER: TBD
+        AZURE_VM_PASSWORD: TBD
+        AZURE_VM_NAME: cloudmeshVM
+      credentials:
+        AZURE_TENANT_ID: 1113be34-aed1-4d00-ab4b-cdd02510be91
+        AZURE_SUBSCRIPTION_ID: 1b552345-85f2-4a12-97af-c67f27be817b
+        AZURE_APPLICATION_ID: e1409c33-f364-4cd9-9981-fbd270058389
+        AZURE_SECRET_KEY: :ydi7/pc9]XZekc/lkBaBDs55hAPOD:O
+        AZURE_REGION: eastus
+    azurearm:
+      cm:
+        active: false
+        heading: AWS
+        host: azure.mocrosoft.com
+        label: azure_arm
+        kind: azure_arm
+        version: TBD
+        service: storage
+      default:
+        image: Canonical:UbuntuServer:16.04-LTS:latest
+        size: Basic_A0
+        resource_group: cloudmesh
+        storage_account: cmdrive
+        network: cmnetwork
+        subnet: cmsubnet
+        blob_container: vhds
+      credentials:
+        AZURE_TENANT_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_SUBSCRIPTION_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_APPLICATION_ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        AZURE_SECRET_KEY: TBD
+        AZURE_REGION: northcentralus
+    azureaz:
+      cm:
+        active: false
+        heading: AWS
+        host: azure.mocrosoft.com
+        label: azureaz
+        kind: azureaz
+        version: TBD
+        service: compute
+      default:
+        image: Canonical:UbuntuServer:16.04-LTS:latest
+        size: Basic_A0
+        resource_group: cloudmesh
+        storage_account: cmdrive
+        network: cmnetwork
+      credentials:
+        resourcegroup: test
+        location: eastus
+    awslibcloud:
+      cm:
+        active: false
+        heading: AWS
+        host: aws.amazon.com
+        label: aws
+        kind: awslibcloud
+        version: TBD
+        service: compute
+      default:
+        image: ami-0f65671a86f061fcd
+        size: t2.micro
+      credentials:
+        region: us-west-2
+        EC2_SECURITY_GROUP: group1
+        EC2_ACCESS_ID: TBD
+        EC2_SECRET_KEY: TBD
+        EC2_PRIVATE_KEY_FILE_PATH: ~/.cloudmesh/aws_cert.pem
+        EC2_PRIVATE_KEY_FILE_NAME: aws_cert
+    aws:
+      cm:
+        active: false
+        heading: AWS
+        host: aws.amazon.com
+        label: aws
+        kind: aws
+        version: wang542
+        service: compute
+      default:
+        image: ami-00dc79254d0461090
+        size: t2.micro
+      credentials:
+        region: us-east-1
+        EC2_SECURITY_GROUP: group1
+        EC2_ACCESS_ID: AKIA2FX5UQVNKL6DOEZM
+        EC2_SECRET_KEY: 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
+        EC2_PRIVATE_KEY_FILE_PATH: ~/.ssh/id_rsa
+        EC2_PRIVATE_KEY_FILE_NAME: id_rsa
+    google:
+      cm:
+        active: true
+        heading: google
+        host: google.cloud.com
+        label: google
+        kind: google
+        version: TBD
+        service: compute
+      default:
+        image: Image Name
+        size: n1-standard-4
+      credentials:
+        datacenter: us-central1-a
+        client_email: <service account>.iam.gserviceaccount.com
+        project: <Project Name>
+        path_to_json_file: ~/.cloudmesh/<file with credentials>
+    chameleon:
+      cm:
+        active: true
+        heading: Chameleon
+        host: chameleoncloud.org
+        label: chameleon
+        kind: openstack
+        version: liberty
+        service: compute
+      credentials:
+        OS_AUTH_URL: https://openstack.tacc.chameleoncloud.org:5000/v2.0
+        OS_USERNAME: wang542
+        OS_PASSWORD: '!2Xiaoshanjipeter'
+        OS_TENANT_NAME: CH-819337
+        OS_TENANT_ID: CH-819337
+        OS_PROJECT_NAME: CH-819337
+        OS_PROJECT_DOMAIN_ID: default
+        OS_USER_DOMAIN_ID: default
+        OS_VERSION: kilo
+        OS_REGION_NAME: RegionOne
+        OS_KEY_PATH: ~/.ssh/id_rsa.pub
+      default:
+        size: m1.medium
+        image: CC-Ubuntu18.04
+        username: cc
+    jetstream:
+      cm:
+        active: true
+        heading: Jetstream
+        host: http://jetstream-cloud.org/
+        label: jetstream
+        kind: opensatck
+        version: kilo
+        service: compute
+      credentials:
+        OS_PROJECT_DOMAIN_NAME: tacc
+        OS_USER_DOMAIN_NAME: tacc
+        OS_PROJECT_ID: 7bfa792867a141e6855fdaaa2a960a4e
+        OS_PROJECT_NAME: TG-CIE170003
+        OS_TENANT_NAME: TG-CIE170003
+        OS_USERNAME: TBD
+        OS_PASSWORD: TBD
+        OS_AUTH_URL: https://tacc.jetstream-cloud.org:5000
+        OS_IDENTITY_API_VERSION: 3
+        OS_INTERFACE: public
+        OS_REGION_NAME: RegionOne
+      default:
+        size: m1.small
+        image: Ubuntu-Server-14.04-LTS
+    cybera-e:
+      cm:
+        active: false
+        heading: Cybera Edmonton OpenStack
+        host: cybera
+        label: kilo
+        kind: openstack
+        version: kilo
+        service: compute
+      credentials:
+        OS_AUTH_URL: https://vm.tacc.chameleoncloud.org:5000/v3
+        OS_TENANT_ID: TBD
+        OS_TENANT_NAME: TBD
+        OS_PROJECT_NAME: TBD
+        OS_USERNAME: TBD
+        OS_PASSWORD: TBD
+        OS_REGION_NAME: Edmonton
+      default:
+        size: m1.small
+        image: Ubuntu 14.04
+    vagrant:
+      credentials:
+        local: true
+        hostname: localhost
+      cm:
+        active: true
+        heading: Vagrant
+        host: TBD
+        label: TBD
+        kind: TBD
+        version: TBD
+        service: compute
+      default:
+        path: ~/.cloudmesh/vagrant
+        image: ubuntu/bionic/64
+        key: ~/.ssh/id_rsa.pub
+    vagrant_remote:
+      cm:
+        active: false
+        heading: Vagrant
+        host: TBD
+        label: TBD
+        kind: TBD
+        version: TBD
+      credentials:
+        local: false
+        hostname: 127.0.0.1
+        username: albert
+        key: ~/.ssh/id_rsa.pub
+      default:
+        path: ~/.cloudmesh/vagrant
+  data:
+    bug:
+      comment: this type is not supported use storage instead
+    default:
+      db: local
+      service: local
+    db:
+      local:
+        CMDATA_DB_FOLDER: ~/cloudmesh/cloud/test/data/db
+    service:
+      local:
+        CMDATA_STORAGE_FOLDER: ~/cloudmesh/cloud/test/data/storage
+      azure:
+        container: cmdata
+        credentials:
+          AZURE_STORAGE_ACCOUNT: ''
+          AZURE_STORAGE_KEY: ''
+      google:
+        credentials:
+          GOOGLE_STORAGE_KEY: ''
+          GOOGLE_STORAGE_SECRET: ''
+    mongo:
+      MONGO_AUTOINSTALL: true
+      MONGO_BREWINSTALL: false
+      LOCAL: ~/local
+      MODE: native
+      MONGO_DBNAME: cloudmesh
+      MONGO_HOST: 127.0.0.1
+      MONGO_PORT: '27017'
+      MONGO_USERNAME: admin
+      MONGO_PASSWORD: admin123
+      MONGO_DOWNLOAD:
+        docker:
+          version: latest
+          MONGO_PATH: ~/.cloudmesh/mongodb
+          MONGO_LOG: ~/.cloudmesh/mongodb/log
+        darwin:
+          url: https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-4.0.12.tgz
+          MONGO_PATH: ~/.cloudmesh/mongodb
+          MONGO_LOG: ~/.cloudmesh/mongodb/log
+          MONGO_HOME: ~/local/mongo
+        linux:
+          url: https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.10.tgz
+          MONGO_PATH: ~/.cloudmesh/mongodb
+          MONGO_LOG: ~/.cloudmesh/mongodb/log
+          MONGO_HOME: ~/local/mongo
+        win32:
+          url: https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.10-signed.msi
+          MONGO_PATH: ~\.cloudmesh\mongodb-data
+          MONGO_LOG: ~\.cloudmesh\mongodb-data\log
+          MONGO_HOME: ~\.cloudmesh\mongo
+        redhat:
+          url: https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/RPMS/mongodb-org-server-4.0.10-1.el7.x86_64.rpm
+          MONGO_PATH: ~/.cloudmesh/mongodb
+          MONGO_LOG: ~/.cloudmesh/mongodb/log
+          MONGO_HOME: ~/local/mongo
+  cluster:
+    bigred2:
+      cm: missing
+      active: false
+      name: bigred2
+      label: bigred
+      address: bigred2.iu.edu
+      credentials:
+        username: TBD
+        pulickey: ~/.ssh/id_rsa.pub
+    karst:
+      cm: missing
+      active: false
+      credentials:
+        username: TBD
+        pulickey: ~/.ssh/id_rsa.pub
+    slurm-taito:
+      cm: missing
+      active: false
+      name: taito
+      credentials:
+        sshconfigpath: ~/.ssh/config
+    clustera:
+      cm: missing
+      active: false
+      computer_a:
+        name: computer_a
+        label: one
+        address: localhost
+        credentials:
+          username: TBD
+          pulickey: ~/.ssh/id_rsa.pub
+      computer_b:
+        cm: missing
+        name: computer_b
+        label: two
+        address: localhost
+        credentials:
+          username: TBD
+          pulickey: ~/.ssh/id_rsa.pub
+    vcluster_test1:
+      cm: missing
+      active: false
+      computer_a:
+        name: machine1
+        label: one
+        address: localhost
+        credentials:
+          sshconfigpath: ~/.ssh/config
+      computer_b:
+        name: computer_a
+        label: one
+        address: localhost
+        credentials:
+          username: TBD
+          pulickey: ~/.ssh/id_rsa.pub
+    vcluster_test2:
+      cm: missing
+      active: false
+      c2:
+        name: machine2
+        label: two
+        address: localhost
+        credentials:
+          sshconfigpath: ~/.ssh/config
+  test:
+    nested: Gregor
+
+<class 'dict'>
+PASSED
+tests/1_local/test_config.py::TestConfig::test_config_subscriptable 
+[35m
+# ######################################################################
+# test_config_subscriptable \tests\1_local\test_config.py 64
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_config.py::TestConfig::test_dictreplace 
+[35m
+# ######################################################################
+# test_dictreplace \tests\1_local\test_config.py 72
+# ######################################################################
+[0m
+
+cloudmesh:
+  profile:
+    name: Gregor
+  unordered:
+    name: "{cloudmesh.other.name}.postfix"
+  other:
+    name: "{cloudmesh.profile.name}"
+
+
+
+cloudmesh:
+  profile:
+    name: Gregor
+  unordered:
+    name: "Gregor.postfix"
+  other:
+    name: "Gregor"
+
+
+{'cloudmesh': {'other': {'name': 'Gregor'},
+               'profile': {'name': 'Gregor'},
+               'unordered': {'name': 'Gregor.postfix'}}}
+PASSED
+tests/1_local/test_config.py::TestConfig::test_configreplace 
+[35m
+# ######################################################################
+# test_configreplace \tests\1_local\test_config.py 102
+# ######################################################################
+[0m
+{'email': 'wang542@iu.edu',
+ 'firstname': 'chenxu',
+ 'github': 'wang542',
+ 'lastname': 'wang',
+ 'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'user': 'wang542'}
+PASSED
+tests/1_local/test_config.py::TestConfig::test_if_yaml_file_exists PASSED
+tests/1_local/test_config.py::TestConfig::test_set Gregor
+PASSED
+tests/1_local/test_config.py::TestConfig::test_benchmark 
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_config_load n=1                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.052 | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.005 | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.003 | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.003 | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.005 | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.03  | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-02 22:02:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.052,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.003,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.03,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+============================== 9 passed in 1.01s ==============================

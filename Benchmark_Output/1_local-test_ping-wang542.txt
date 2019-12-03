@@ -1,0 +1,88 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 3 items
+
+tests/1_local/test_ping.py::TestPing::test_internal_ping FAILED
+tests/1_local/test_ping.py::TestPing::test_ping_processor 
+Processors: 1
++-----------------------+---------+-----+-----+--------+
+| host                  | success | max | min | stddev |
++-----------------------+---------+-----+-----+--------+
+| 127.0.0.1             | False   |     |     |        |
+| localhost             | False   |     |     |        |
+| www.indiana.edu       | False   |     |     |        |
+| www.pbs.org           | False   |     |     |        |
+| www.github.com        | False   |     |     |        |
+| www.redhat.com        | False   |     |     |        |
+| www.openstack.org     | False   |     |     |        |
+| www.bbc.com           | False   |     |     |        |
+| www.ec2instances.info | False   |     |     |        |
+| aws.amazon.com        | False   |     |     |        |
++-----------------------+---------+-----+-----+--------+
+FAILED
+tests/1_local/test_ping.py::TestPing::test_benchmark 
++----------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer          | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++----------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| total _ping    | 0.019 | 2019-12-02 22:04:53 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping 127.0.0.1 | 0.019 | 2019-12-02 22:04:53 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total p=1 c=1  | 0.432 | 2019-12-02 22:04:53 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++----------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,total _ping,0.019,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping 127.0.0.1,0.019,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total p=1 c=1,0.432,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+_________________________ TestPing.test_internal_ping _________________________
+
+self = <test_ping.TestPing object at 0x0000017E54DD8988>
+
+    def test_internal_ping(self):
+        StopWatch.start("total _ping")
+    
+        for host in hosts:
+            location = {
+                'ip': host,
+                'count': 1,
+            }
+    
+            StopWatch.start(f"ping {host}")
+            result = Host._ping(location)
+            StopWatch.stop(f"ping {host}")
+    
+            StopWatch.stop("total _ping")
+    
+    
+>           assert result['success']
+E           assert False
+
+tests\1_local\test_ping.py:56: AssertionError
+________________________ TestPing.test_ping_processor _________________________
+
+self = <test_ping.TestPing object at 0x0000017E54DDFD08>
+
+    def test_ping_processor(self):
+    
+        print ()
+        for processors in range(1,len(hosts)):
+            print ("Processors:", processors)
+            results = self.ping(processors=processors)
+            print (Printer.write(results,
+                                 order=['host',
+                                         'success',
+                                         'max',
+                                         'min',
+                                         'stddev']
+                                 ))
+            for result in results:
+>               assert result['success']
+E               assert False
+
+tests\1_local\test_ping.py:72: AssertionError
+========================= 2 failed, 1 passed in 1.10s =========================

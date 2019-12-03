@@ -1,0 +1,101 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 3 items
+
+tests/1_local/test_key.py::TestName::test_key 
+[35m
+# ######################################################################
+# test_key \tests\1_local\test_key.py 20
+# ######################################################################
+[0m
+{'cm': {'cloud': 'local', 'kind': 'key', 'name': 'rsa'},
+ 'comment': 'wangchenxu1995@gmail.com',
+ 'fingerprint': 'd1:51:83:f0:dd:70:99:81:3b:6a:19:bf:49:38:98:24',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q==',
+ 'location': {'private': 'C:\\Users\\wangc\\.ssh\\id_rsa',
+              'public': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub'},
+ 'name': 'rsa',
+ 'path': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'profile': {'email': 'wang542@iu.edu',
+             'firstname': 'chenxu',
+             'github': 'wang542',
+             'lastname': 'wang',
+             'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+             'user': 'wang542'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q== '
+               'wangchenxu1995@gmail.com',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file://C:\\Users\\wangc\\.ssh\\id_rsa.pub'}
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q== wangchenxu1995@gmail.com
+<class 'cloudmesh.management.configuration.SSHkey.SSHkey'>
+{}
+PASSED
+tests/1_local/test_key.py::TestName::test_git 
+[35m
+# ######################################################################
+# test_git \tests\1_local\test_key.py 34
+# ######################################################################
+[0m
+Username: wang542
+[{'cm': {'cloud': 'local', 'kind': 'key', 'name': 'wang542_git_0'},
+  'comment': 'wang542_git_0',
+  'fingerprint': 'd1:51:83:f0:dd:70:99:81:3b:6a:19:bf:49:38:98:24',
+  'id': 0,
+  'key': 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q==',
+  'kind': 'key',
+  'name': 'wang542_git_0',
+  'public_key': 'ssh-rsa '
+                'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q==',
+  'source': 'git',
+  'type': 'ssh-rsa',
+  'uri': 'https://api.github.com/users/wang542/keys'}]
++---------------+-------------------------------------------------+
+| Name          | Fingerprint                                     |
++---------------+-------------------------------------------------+
+| wang542_git_0 | d1:51:83:f0:dd:70:99:81:3b:6a:19:bf:49:38:98:24 |
++---------------+-------------------------------------------------+
+PASSED
+tests/1_local/test_key.py::TestName::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 5.9 GiB                                                                           |
+| mem_free          | 5.9 GiB                                                                           |
+| mem_percent       | 62.9%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 10.0 GiB                                                                          |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++----------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++----------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_key/test_key    | 0.064 | 2019-12-02 22:03:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_git    | 0.343 | 2019-12-02 22:03:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop | 0.0   | 2019-12-02 22:03:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++----------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_key/test_key,0.064,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_git,0.343,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+============================== 3 passed in 1.33s ==============================

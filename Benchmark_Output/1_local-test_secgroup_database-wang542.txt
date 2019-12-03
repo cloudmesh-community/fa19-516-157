@@ -1,0 +1,110 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... 
+
+collected 9 items
+
+tests/1_local/test_secgroup_database.py::test_clear 
+[35m
+# ######################################################################
+# test_clear \tests\1_local\test_secgroup_database.py 27
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_upload_groups 
+[35m
+# ######################################################################
+# test_upload_groups \tests\1_local\test_secgroup_database.py 45
+# ######################################################################
+[0m
+add group: default
+add group: flask
+2
+PASSED
+tests/1_local/test_secgroup_database.py::test_upload_rules 
+[35m
+# ######################################################################
+# test_upload_rules \tests\1_local\test_secgroup_database.py 64
+# ######################################################################
+[0m
+add rule: ssh
+add rule: icmp
+add rule: flask
+add rule: http
+add rule: https
+5
+PASSED
+tests/1_local/test_secgroup_database.py::test_add_rule_to_group 
+[35m
+# ######################################################################
+# test_add_rule_to_group \tests\1_local\test_secgroup_database.py 84
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_delete_rule_from_group 
+[35m
+# ######################################################################
+# test_delete_rule_from_group \tests\1_local\test_secgroup_database.py 102
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_remove_group 2 -> 1
+PASSED
+tests/1_local/test_secgroup_database.py::test_remove_rule 5 -> 4
+PASSED
+tests/1_local/test_secgroup_database.py::test_load_defaults 
+PASSED
+tests/1_local/test_secgroup_database.py::test_benchmark 
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 6.1 GiB                                                                           |
+| mem_free          | 6.1 GiB                                                                           |
+| mem_percent       | 61.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 9.8 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                              | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_secgroup_database/test_clear                  | 0.552 | 2019-12-02 22:06:24 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_groups          | 1.202 | 2019-12-02 22:06:25 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_rules           | 2.07  | 2019-12-02 22:06:27 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_add_rule_to_group      | 0.503 | 2019-12-02 22:06:29 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_delete_rule_from_group | 0.84  | 2019-12-02 22:06:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_group           | 0.257 | 2019-12-02 22:06:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_rule            | 0.289 | 2019-12-02 22:06:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_load_defaults          | 0.309 | 2019-12-02 22:06:34 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                               | 0.0   | 2019-12-02 22:06:35 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_secgroup_database/test_clear,0.552,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_groups,1.202,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_rules,2.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_add_rule_to_group,0.503,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_delete_rule_from_group,0.84,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_group,0.257,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_rule,0.289,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_load_defaults,0.309,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+============================= 9 passed in 12.37s ==============================
