@@ -117,7 +117,7 @@ class TestCompute:
     def csv_writer(self):
         header = self.cloud_providers
         header.insert(0, " ")
-        with open('benchmark_time_result.csv', 'wt', newline='')as file:
+        with open('benchmark_time_result_v2.csv', 'wt', newline='')as file:
             writer = csv.writer(file, delimiter=',')
             writer.writerow(header)
             for res in self.res_list:
@@ -127,7 +127,7 @@ class TestCompute:
 def main():
     # remember to change the default vm name accordingly, in order for vm terminate to work properly
     vm_name = "wang542-vm"
-    key = "wang542"
+    key = "wang542-key"
     Shell.execute("cms start", shell=True)
     Shell.execute("cms set key="+key, shell=True)
     bench_marker = TestCompute()

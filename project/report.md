@@ -5,7 +5,7 @@ Chenxu Wang, fa19-516-157
 * [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 
 * [Link to custom benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
-* [Link to custom benchmark output](https://raw.githubusercontent.com/cloudmesh-community/fa19-516-157/master/benchOutput.txt)
+* [Link to custom benchmark output](https://raw.githubusercontent.com/cloudmesh-community/fa19-516-157/master/benchmarkOutput_v2.txt)
 ## Goal
 
 * Benchmark the current cloudmesh compute commands on different providers 
@@ -13,7 +13,7 @@ Chenxu Wang, fa19-516-157
 ### Result
 ![benchmark result](../images/benchmark_res.PNG)
 
-### Insights
+## Insights
 * aws is the most efficient out of 3 providers, as expected
 * azure is really fast in retrieving flavor and image list compared to aws
 * azure takes long time to boot vm compared to aws because azure has to create 
@@ -21,10 +21,13 @@ all resources one by one where aws has default resources ready, and the azure ap
 * same as previous point, azure terminate takes long time because the provider will delete every resource 
 related to the terminating vm, which is a potential bug if two vm share same resources.
 
-### Discoveries
+## Discoveries
 * ssh error, seems to be a mongodb key lookup error when looking for publicIP, but there are users
 stated that ssh works for them
   ![ssh error](../images/ssh-error.PNG)
+* Update ssh error(Week of December 8)
+    * The public_ip look up error has been resolved and vm ssh is working on azure, but aws still
+    seems to encounter error "connection refused by remote", possibly due to secrule
 * Chameleon: 
     * booting multiple vms will definitely fail because sometimes chameleon takes long time
      to boot 1 vm (longest I've encountered is 11 minutes) and provider will time out 
@@ -111,6 +114,12 @@ stated that ssh works for them
 * [Link to cloud-azure-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542.md)
 * [Link to complete output of benchmarkers](https://github.com/cloudmesh-community/fa19-516-157/tree/master/Benchmark_Output)
 
+### Week 16 December 8
+* Tested updated compute with custom script
+* Benchmarked updated cloudmesh with cloudmesh tests
+* [Link to cloud-aws-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542-v2.txt)
+* [Link to cloud-azure-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542-v2.txt)
+* [Link to cloud-openstack-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542-v2.txt)
 
 ## Reference
 
