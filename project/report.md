@@ -14,6 +14,7 @@ Chenxu Wang, fa19-516-157
 ![benchmark result](../images/benchmark_res.PNG)
 
 ## Insights
+
 * aws is the most efficient out of 3 providers, as expected
 * azure is really fast in retrieving flavor and image list compared to aws
 * azure takes long time to boot vm compared to aws because azure has to create 
@@ -22,9 +23,12 @@ all resources one by one where aws has default resources ready, and the azure ap
 related to the terminating vm, which is a potential bug if two vm share same resources.
 
 ## Discoveries
+
 * ssh error, seems to be a mongodb key lookup error when looking for publicIP, but there are users
 stated that ssh works for them
+
   ![ssh error](../images/ssh-error.PNG)
+
 * Update ssh error(Week of December 8)
     * The public_ip look up error has been resolved and vm ssh is working on azure, but aws still
     seems to encounter error "connection refused by remote", possibly due to secrule
@@ -36,10 +40,13 @@ stated that ssh works for them
 * AWS:
     * cms image list --refresh will encounter error, the correct results are retrieved successfully
     from aws, the results are stored in temp file in .cloudmesh and is correct.
+    
     ![aws-image-error](../images/aws-image-error.PNG)
+ 
     The error is likely with the mongodb operations in aws provider
     * vm terminate outputs error but it actually works, it is likely the flatdict function encountered
     empty dictionary when trying to display result
+ 
  * Azure:
     * user need to use command `cms set key=keyname` & `cms key init` before using azure as cloud,
     `cms init` doesn't include `key init`.
