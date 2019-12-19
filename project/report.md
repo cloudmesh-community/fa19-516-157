@@ -128,14 +128,14 @@ same directory as the script.
 
 - Attached Network Security Group when creating VM
 
-[Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
+- [Link to Azure practice script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/project/AzurePractice/myAzurePractice.py)
 
 
 ### Week 10 October 28
 
 - Started working in cloudmesh-compute-azure, added network secGroup attachment
 
-[Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+- [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
 
 
 ### Week 11 November 4
@@ -144,7 +144,7 @@ same directory as the script.
 
 - Solved error within local env, had to reinstall cloudmesh
 
-[Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+- [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
 
 
 ### Week 12 November 11
@@ -153,7 +153,7 @@ same directory as the script.
 
 - restructured local repo to work directly in environment
 
-[Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
+- [Link to forked cloudmesh-compute repo](https://github.com/wang542/cloudmesh-cloud/blob/azure_wang542/cloudmesh/compute/azure/Provider.py)
 
 
 ### Week 13 November 18
@@ -173,15 +173,15 @@ same directory as the script.
 
 - Benchmarked cloudmesh with cloudmesh tests
 
-[Link to 1-local-wang542](https://github.com/wang542/benchmark/blob/wang542/results/1_local-wang542.md)
+- [Link to 1-local-wang542](https://github.com/wang542/benchmark/blob/wang542/results/1_local-wang542.md)
 
-[Link to cloud-aws-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542.md)
+- [Link to cloud-aws-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542.md)
 
-[Link to cloud-openstack-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542.md)
+- [Link to cloud-openstack-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542.md)
 
-[Link to cloud-azure-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542.md)
+- [Link to cloud-azure-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542.md)
 
-[Link to complete output of benchmarkers](https://github.com/cloudmesh-community/fa19-516-157/tree/master/Benchmark_Output)
+- [Link to complete output of benchmarkers](https://github.com/cloudmesh-community/fa19-516-157/tree/master/Benchmark_Output)
 
 
 ### Week 16 December 8
@@ -190,11 +190,11 @@ same directory as the script.
 
 - Benchmarked updated cloudmesh with cloudmesh tests
 
-[Link to cloud-aws-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542-v2.txt)
+- [Link to cloud-aws-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542-v2.txt)
 
-[Link to cloud-azure-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542-v2.txt)
+- [Link to cloud-azure-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542-v2.txt)
 
-[Link to cloud-openstack-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542-v2.txt)
+- [Link to cloud-openstack-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542-v2.txt)
 
 
 ## Reference
