@@ -48,6 +48,8 @@ stated that ssh works for them
     can cause error.
     * cms image list --refresh doesn't seem to be displaying the correct images, the displayed images
     doesn't seem to be official images like Ubuntu, Centos, following table is the azure image output
+    * Update: After further investigation and discussing with TA, the image list is getting retrieved
+    , It is just displaying first few images of the entire output.
     
 
     | Name    | Location | Publisher     | Plan Name                | Product                  | Operating System |
@@ -70,6 +72,14 @@ stated that ssh works for them
 
     +---------+----------+---------------+--------------------------+--------------------------+------------------+
 
+#### How to Use This Custom Benchmark Script
+* Before using this script, users need to complete the initial cloudmesh setup process, 
+including `cms init`, `cms key init`, and upload public key onto cloud 
+providers. Note, azure doesn't support key storage.
+* Adjust the cloud_providers list in line 19 of compute_BenchMarker.py, 
+if there are more cloud providers implemented in cloudmesh.
+* To run the script, simply type `python compute_BenchMarker.py`in a terminal under 
+same directory as the script.
     
 ## Progress
 

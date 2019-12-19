@@ -5,25 +5,18 @@ from cloudmesh.common.debug import VERBOSE
 from cloudmesh.common.util import HEADING
 from time import time
 
-# TODO: vm-ssh
-
-# Note: Chameleon cloud will timeout during vm creation, due to long vm startup time, multiple vm boot isn't possible
-#       Azure provider still outputting error, can't instantiate abstract class wait
-#       Add more cloud provider such as google and oracle when provider become available
-#       Multiple vm boot has been commented out due to long run time
-#       Make sure to update the vm name and key in main
+# Note: Chameleon cloud sometimes will timeout during vm creation, due to long vm startup time, multiple vm boot
+# isn't possible.
+# Add more cloud provider in cloud_providers in line19, such as google and oracle when provider become available.
+# Multiple vm boot has been commented out due to long run time
 """
 AWS: Make sure the AMI-id in cloudmesh.yaml is available within the region
 """
 
-"""
-Errors: can't give specific name to cms vm boot command
-        vm[ip_public] key error during cms vm ssh, ROBO3T showing key as public_ips in aws_vm collection
-"""
-
 
 class TestCompute:
-    cloud_providers = ["chameleon", "aws", "azure"]
+
+    cloud_providers = ["aws", "azure"]
     res_list = []
 
     def test_cms_flavor_list(self):
@@ -56,29 +49,25 @@ class TestCompute:
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-start")
 
-    def test_cms_vm_boot_one(self):
+    def test_cms_vm_boot_one(self, vm_name):
         HEADING()
-        command = "cms vm boot "
+        command = "cms vm boot --name="+vm_name
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-1")
 
     def test_cms_vm_boot_five(self):
         # Excluding chameleon from multiple vm boot
         HEADING()
-        self.cloud_providers = ["aws", "azure"]
         command = "cms vm boot --n=5"
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-5")
-        self.cloud_providers = ["chameleon", "aws", "azure"]
 
     def test_cms_vm_boot_ten(self):
         # Excluding chameleon from multiple vm boot
         HEADING()
-        self.cloud_providers = ["aws", "azure"]
         command = "cms vm boot --n=10"
         time_record = self.test_base(command)
         self.printer_logger(time_record, "vm-boot-10")
-        self.cloud_providers = ["chameleon", "aws", "azure"]
 
     def test_cms_vm_terminate(self, name, count):
         # Giving one name will delete all instance with the same name
@@ -125,26 +114,15 @@ class TestCompute:
 
 
 def main():
-    # remember to change the default vm name accordingly, in order for vm terminate to work properly
-    vm_name = "wang542-vm"
-    key = "wang542-key"
-    Shell.execute("cms start", shell=True)
-    Shell.execute("cms set key="+key, shell=True)
+    vm_name = "tester-vm"
+    Shell.execute("cms mongo admin start", shell=True)
     bench_marker = TestCompute()
-    bench_marker.test_cms_flavor_list()
-    bench_marker.test_cms_image_list()
-    bench_marker.test_cms_vm_boot_one()
+    # bench_marker.test_cms_flavor_list()
+    # bench_marker.test_cms_image_list()
+    bench_marker.test_cms_vm_boot_one(vm_name)
     bench_marker.test_cms_vm_stop(vm_name)
     bench_marker.test_cms_vm_start(vm_name)
     bench_marker.test_cms_vm_terminate(vm_name, 1)
-
-    """
-    caution the following boot commands will take long time to run
-    bench_marker.test_cms_vm_boot_five()
-    bench_marker.test_cms_vm_terminate(vm_name, 5)
-    bench_marker.test_cms_vm_boot_ten()
-    bench_marker.test_cms_vm_terminate(vm_name, 10)
-    """
     bench_marker.test_cms_vm_list()
 
     # output into csv file, look for "benchmark_result.csv
