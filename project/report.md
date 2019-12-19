@@ -72,7 +72,7 @@ stated that ssh works for them
 
     +---------+----------+---------------+--------------------------+--------------------------+------------------+
 
-#### How to Use This Custom Benchmark Script
+### How to Use This Custom Benchmark Script
 * Before using this script, users need to complete the initial cloudmesh setup process, 
 including `cms init`, `cms key init`, and upload public key onto cloud 
 providers. Note, azure doesn't support key storage.
