@@ -80,24 +80,15 @@ stated that ssh works for them
     
 
     | Name    | Location | Publisher     | Plan Name                | Product                  | Operating System |
-
-    +---------+----------+---------------+--------------------------+--------------------------+------------------+
-
+    |---------|----------|---------------|--------------------------|--------------------------|------------------|
     | 1.0.0   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
-
     | 1.1.0   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
-
     | 1.1.2   | eastus   | 128technology | 128t_networking_platform | 128t_networking_platform |                  |
-
     | 4.10.11 | eastus   | 1e            | tachyonv4-1              | tachyonv30-0-100         |                  |
-
     | 0.0.2   | eastus   | 2021ai        | grace_vm                 | grace-churn-vm           |                  |
-
     | 16.0.8  | eastus   | 3cx-pbx       | 16                       | 3cx-pbx                  |                  |
-
     | 5.2.5   | eastus   | 4psa          | vpn525-single            | voipnow                  |                  |
-
-    +---------+----------+---------------+--------------------------+--------------------------+------------------+
+    ---------------------------------------------------------------------------------------------------------------
 
 ### How to Use This Custom Benchmark Script
 
