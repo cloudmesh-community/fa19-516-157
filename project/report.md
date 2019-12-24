@@ -179,7 +179,7 @@ Cloudmesh. Please see `cms sys command generate` for future activities.
 
 Towards a better benchmark
 
-* [notebook example](https://github.com/cloudmesh/cloudmesh-cloud/blob/master/benchmark/analyse_loop.ipynb)
+* [Notebook example](https://github.com/cloudmesh/cloudmesh-cloud/blob/master/benchmark/analyse_loop.ipynb)
 
 A link created by this activity
 
