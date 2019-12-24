@@ -16,6 +16,10 @@ has become available during the Fall semester. However, this new
 version was not used for testing, and it was not attempted to verify if
 Cloudmesh works on this newer version.
 
+In addition a musch better approach for benchmarking has been demonstarted by von Laszewski at 
+<https://github.com/cloudmesh/cloudmesh-cloud/blob/master/benchmark/analyse_loop.ipynb>
+This can be used and expanded upon for other clouds.
+
 ## Introduction
 
 Cloudmesh provides a multi-cloud interface to compute services on AWS,
@@ -173,6 +177,10 @@ Cloudmesh. Please see `cms sys command generate` for future activities.
 
 
 ## References
+
+Towards a better benchmark
+
+* [notebook example](https://github.com/cloudmesh/cloudmesh-cloud/blob/master/benchmark/analyse_loop.ipynb)
 
 A link created by this activity
 
