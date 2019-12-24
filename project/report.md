@@ -1,17 +1,15 @@
-# Benchmark Compute Providers
+# Benchmarking Cloudmesh Compute Providers
 
 Chenxu Wang, fa19-516-157
 
 - [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
-
 - [Link to custom benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
-
 - [Link to custom benchmark output](https://raw.githubusercontent.com/cloudmesh-community/fa19-516-157/master/benchmarkOutput_v2.txt)
 
 
 ## Goal
 
-- Benchmark the current cloudmesh compute commands on different providers 
+Benchmark the current cloudmesh compute commands on different providers 
 
 ### Result
 
@@ -165,37 +163,25 @@ same directory as the script.
 - Benchmarked cloudmesh with cloudmesh tests
 
 - [Link to 1-local-wang542](https://github.com/wang542/benchmark/blob/wang542/results/1_local-wang542.md)
-
 - [Link to cloud-aws-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542.md)
-
 - [Link to cloud-openstack-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542.md)
-
 - [Link to cloud-azure-wang542](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542.md)
-
 - [Link to complete output of benchmarkers](https://github.com/cloudmesh-community/fa19-516-157/tree/master/Benchmark_Output)
 
 
 ### Week 16 December 8
 
 - Tested updated compute with custom script
-
 - Benchmarked updated cloudmesh with cloudmesh tests
-
 - [Link to cloud-aws-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-aws-wang542-v2.txt)
-
 - [Link to cloud-azure-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-azure-wang542-v2.txt)
-
 - [Link to cloud-openstack-wang542-v2](https://github.com/wang542/benchmark/blob/wang542/results/cloud-openstack-wang542-v2.txt)
 
 
 ## Reference
 
 - [Create VM on Azure using Python](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/python#)
-
 - [Issue/Example related to NSG creation on github-azure](https://github.com/MicrosoftDocs/azure-docs/issues/30555)
-
 - [Discussion regarding NSG security rules](https://stackoverflow.com/questions/55970074/issues-with-network-security-group-deployment-using-python-networksecuritygrou)
-
 - [Azure documentation-Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
-
 - [Azure Security Rules Operation class -python](https://docs.microsoft.com/en-us/python/api/azure-mgmt-network/azure.mgmt.network.v2017_03_01.operations.securityrulesoperations?view=azure-python)
