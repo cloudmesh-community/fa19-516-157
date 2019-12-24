@@ -117,8 +117,7 @@ encountered empty dictionary when trying to display result
 Once all flavors are in Cloudmesh they can be searched with the build-in
 cloudmesh search function. However, AWS provides the ability to restrict
 the flavors. This is indicated as a prototype developed by another user
-in [GitHub]
-(https://github.com/cloudmesh/cloudmesh-cloud/blob/master/cloudmesh/compute/aws/AwsFlavors-dev.py).
+in [GitHub](https://github.com/cloudmesh/cloudmesh-cloud/blob/master/cloudmesh/compute/aws/AwsFlavors-dev.py).
 However, this implementation was not completed as the introduction of it
 into the providers contained side effects. Thus it is just added as a
 development example for future activities. Additional pytest should be
