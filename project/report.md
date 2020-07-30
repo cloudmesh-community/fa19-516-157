@@ -1,9 +1,7 @@
 # Benchmarking Cloudmesh Compute Providers
 
 * Gregor von Laszewski
-* Chenxu Wang, fa19-516-157
-
-* [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
+* Chenxu Wang, [fa19-516-157](https://github.com/cloudmesh-community/fa19-516-157)
 * [Link to custom benchmark script](https://github.com/cloudmesh-community/fa19-516-157/blob/master/compute_BenchMarker.py)
 * [Link to custom benchmark output](https://raw.githubusercontent.com/cloudmesh-community/fa19-516-157/master/benchmarkOutput_v2.txt)
 
